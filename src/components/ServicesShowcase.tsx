@@ -1,18 +1,18 @@
-import React from 'react';
+import React from "react";
 
 const ServicesShowcase = () => {
   return (
-    <section className="bg-[rgba(246,246,246,1)] shadow-[0px_-19px_85px_rgba(0,0,0,0.1)] flex max-w-full w-[1512px] flex-col overflow-hidden items-stretch py-8 rounded-[50px_50px_0px_0px]">
+    <section className="bg-[rgba(246,246,246,1)] shadow-[0px_-19px_85px_rgba(0,0,0,0.1)] flex max-w-screen-xl flex-col overflow-hidden items-stretch py-8 rounded-[50px_50px_0px_0px]">
       <div className="self-center flex w-[1297px] max-w-full flex-col items-stretch">
-        <div className="flex text-[84px] font-medium justify-center flex-wrap max-md:text-[40px]">
-          <h2 className="text-[rgba(179,179,179,1)] leading-none tracking-[-1.76px] w-[567px] max-md:max-w-full max-md:text-[40px]">
+        <div className="flex text-7xl gap-4 font-medium flex-wrap max-md:text-[40px]">
+          <h2 className="text-[rgba(179,179,179,1)] max-md:max-w-full max-md:text-[40px]">
             Check out our
           </h2>
-          <span className="leading-loose tracking-[-3.54px] text-center max-md:text-[40px]">
+          <span className="max-md:text-[40px] bg-primary-gradient bg-clip-text text-transparent">
             Services.
           </span>
         </div>
-        
+
         <div className="bg-white shadow-[0px_-6px_16px_rgba(0,0,0,0.05)] border flex min-h-[643px] w-full items-center gap-[40px_67px] overflow-hidden flex-wrap mt-[41px] pl-16 py-[51px] rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:pl-5">
           <div className="min-w-60 w-[524px] max-md:max-w-full">
             <div className="max-w-full w-[524px]">
@@ -26,22 +26,34 @@ const ServicesShowcase = () => {
                 </h3>
               </div>
               <p className="text-[rgba(34,34,34,1)] text-[15px] font-[450] leading-[22px] mt-[19px] max-md:max-w-full">
-                At Allegianz, we champion green energy with a legacy in
-                solar power development. Partnering with leaders like IPS
-                Solar Systems and experts like Dr. Neway Argaw, we've
-                expanded into EPC and funding across Asia, GCC, MENA,
-                Africa, and Latin America.
+                At Allegianz, we champion green energy with a legacy in solar
+                power development. Partnering with leaders like IPS Solar
+                Systems and experts like Dr. Neway Argaw, we've expanded into
+                EPC and funding across Asia, GCC, MENA, Africa, and Latin
+                America.
               </p>
             </div>
-            
+
             <div className="w-full text-base text-[rgba(34,34,34,1)] font-extrabold tracking-[-0.4px] leading-7 mt-6">
               <div className="h-[236px]">
                 {[
-                  { icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/51a37ce43db9b0777d1686ffccd08e45fa7ec84f?placeholderIfAbsent=true", text: "Shovel-ready solar projects seeking EPC support or funding for quick mobilization and reduced lead time." },
-                  { icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/35a1ee4ab80a255b5efea915649382d0859ec448?placeholderIfAbsent=true", text: "Coordination services align developers, investors, and partners to facilitate collaboration." },
-                  { icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/91969f25e615842e1a2679c3d55f419733098878?placeholderIfAbsent=true", text: "Shovel-ready solar projects seeking EPC support or funding for quick mobilization and reduced lead time." }
+                  {
+                    icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/51a37ce43db9b0777d1686ffccd08e45fa7ec84f?placeholderIfAbsent=true",
+                    text: "Shovel-ready solar projects seeking EPC support or funding for quick mobilization and reduced lead time.",
+                  },
+                  {
+                    icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/35a1ee4ab80a255b5efea915649382d0859ec448?placeholderIfAbsent=true",
+                    text: "Coordination services align developers, investors, and partners to facilitate collaboration.",
+                  },
+                  {
+                    icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/91969f25e615842e1a2679c3d55f419733098878?placeholderIfAbsent=true",
+                    text: "Shovel-ready solar projects seeking EPC support or funding for quick mobilization and reduced lead time.",
+                  },
                 ].map((item, index) => (
-                  <div key={index} className="flex w-full max-w-[532px] flex-col items-stretch justify-center px-[13px] py-3 rounded-lg">
+                  <div
+                    key={index}
+                    className="flex w-full max-w-[532px] flex-col items-stretch justify-center px-[13px] py-3 rounded-lg"
+                  >
                     <div className="flex w-full gap-2 flex-wrap">
                       <img
                         src={item.icon}
@@ -50,10 +62,10 @@ const ServicesShowcase = () => {
                       />
                       <div className="min-w-60 w-[456px] py-[7px] max-md:max-w-full">
                         <span className="font-[700]">
-                          {item.text.split(' ').slice(0, 3).join(' ')}{' '}
+                          {item.text.split(" ").slice(0, 3).join(" ")}{" "}
                         </span>
                         <span className="font-[450]">
-                          {item.text.split(' ').slice(3).join(' ')}
+                          {item.text.split(" ").slice(3).join(" ")}
                         </span>
                       </div>
                     </div>
@@ -62,7 +74,7 @@ const ServicesShowcase = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="relative flex min-w-60 gap-[40px_100px] overflow-hidden flex-1 shrink basis-[0%] pl-[641px] max-md:max-w-full">
             <img
               src="https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/bfe174cd2e8439179d121dc03a33b60910729c77?placeholderIfAbsent=true"
@@ -72,7 +84,7 @@ const ServicesShowcase = () => {
             <div className="bg-[rgba(228,226,223,1)] flex shrink h-[541px] flex-1 basis-[0%]" />
           </div>
         </div>
-        
+
         <div className="bg-white border flex w-full gap-[40px_70px] flex-wrap mt-[41px] py-[50px] rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:mt-10">
           <div className="bg-white flex min-w-60 flex-col overflow-hidden text-[13px] text-[rgba(21,21,21,1)] font-normal leading-none w-[645px] px-[65px] py-[41px] rounded-[0px_13px_13px_0px] border-[rgba(228,226,223,1)] border-t border-r border-b max-md:px-5">
             <div className="flex items-stretch gap-3 tracking-[0.25px] ml-[27px] max-md:ml-2.5">
@@ -97,7 +109,7 @@ const ServicesShowcase = () => {
               source: UserZoom.com
             </div>
           </div>
-          
+
           <div className="min-w-60 w-[441px] max-md:max-w-full">
             <div className="w-full font-medium max-md:max-w-full">
               <div className="text-[rgba(112,109,121,1)] text-2xl leading-none tracking-[-0.57px] max-md:max-w-full">
@@ -109,14 +121,13 @@ const ServicesShowcase = () => {
             </div>
             <p className="text-[rgba(34,34,34,1)] text-[15px] font-[450] leading-[22px] mt-[19px] max-md:max-w-full">
               Our method is straightforward but effective. We begin with
-              thorough user research to shape strategies that boost
-              engagement and retention. We continuously refine the Business
-              to perfect it, ensuring it fits the market and scales
-              successfully.
+              thorough user research to shape strategies that boost engagement
+              and retention. We continuously refine the Business to perfect it,
+              ensuring it fits the market and scales successfully.
             </p>
           </div>
         </div>
-        
+
         <div className="bg-white border flex w-full items-center gap-[40px_84px] overflow-hidden flex-wrap mt-[41px] pl-[63px] pt-[63px] pb-[45px] rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:pl-5">
           <div className="min-w-60 font-[450] w-[506px] max-md:max-w-full">
             <div className="w-full font-medium max-md:max-w-full">
@@ -129,26 +140,40 @@ const ServicesShowcase = () => {
             </div>
             <p className="text-[rgba(34,34,34,1)] text-[15px] leading-[22px] mt-[22px] max-md:max-w-full">
               While we are open to working across various sectors, we have a
-              strong preference and inclination toward specific industries
-              where our expertise, experience, and insights allow us to
-              deliver highly relevant and competitive services. By focusing
-              on these key segments, we can provide tailored solutions that
-              align with industry trends, challenges, and opportunities.
-              This strategic approach ensures that our clients benefit from
-              specialized knowledge, innovative strategies, and a deep
-              understanding of market dynamics, ultimately driving greater
-              value and success.
+              strong preference and inclination toward specific industries where
+              our expertise, experience, and insights allow us to deliver highly
+              relevant and competitive services. By focusing on these key
+              segments, we can provide tailored solutions that align with
+              industry trends, challenges, and opportunities. This strategic
+              approach ensures that our clients benefit from specialized
+              knowledge, innovative strategies, and a deep understanding of
+              market dynamics, ultimately driving greater value and success.
             </p>
-            
+
             <div className="flex w-full gap-[35px] text-[15px] text-[rgba(34,34,34,1)] tracking-[-0.46px] leading-[27px] flex-wrap mt-[22px] max-md:max-w-full">
               <div className="flex min-w-60 flex-col grow shrink w-[202px]">
                 {[
-                  { icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/4d65c489a7f7e4f66d80b5d0988ee3f95de09afb?placeholderIfAbsent=true", text: "Real Estate & Construction" },
-                  { icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/463132eb7c70b399877f07d7f1eead479c8b35b2?placeholderIfAbsent=true", text: "Public–Private Partnerships" },
-                  { icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/3c4bee377f6c3b2a646fd0eb78806bdc4aaf60b2?placeholderIfAbsent=true", text: "Healthcare & Pharmaceuticals" },
-                  { icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/b4840354824563cbc4489f87793d2ef12f161429?placeholderIfAbsent=true", text: "Export & Import Facilitation" }
+                  {
+                    icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/4d65c489a7f7e4f66d80b5d0988ee3f95de09afb?placeholderIfAbsent=true",
+                    text: "Real Estate & Construction",
+                  },
+                  {
+                    icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/463132eb7c70b399877f07d7f1eead479c8b35b2?placeholderIfAbsent=true",
+                    text: "Public–Private Partnerships",
+                  },
+                  {
+                    icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/3c4bee377f6c3b2a646fd0eb78806bdc4aaf60b2?placeholderIfAbsent=true",
+                    text: "Healthcare & Pharmaceuticals",
+                  },
+                  {
+                    icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/b4840354824563cbc4489f87793d2ef12f161429?placeholderIfAbsent=true",
+                    text: "Export & Import Facilitation",
+                  },
                 ].map((item, index) => (
-                  <div key={index} className={`flex gap-3.5 ${index > 0 ? 'mt-[9px]' : ''}`}>
+                  <div
+                    key={index}
+                    className={`flex gap-3.5 ${index > 0 ? "mt-[9px]" : ""}`}
+                  >
                     <img
                       src={item.icon}
                       alt="Industry Icon"
@@ -158,15 +183,30 @@ const ServicesShowcase = () => {
                   </div>
                 ))}
               </div>
-              
+
               <div className="flex flex-col grow shrink w-[179px]">
                 {[
-                  { icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/655c706a0e3b0271fae8a2d870e6a218ddac0296?placeholderIfAbsent=true", text: "Telecommunications" },
-                  { icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/f76416afe384225b86c2f5ec4e3c53a420344ce5?placeholderIfAbsent=true", text: "Technology" },
-                  { icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/1aeeb1bef7c3439d6305f5cbf1accf3895da4c8b?placeholderIfAbsent=true", text: "Finance & Banking" },
-                  { icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/9b68ddddd0e8582e15de06d9c219487a31a5d0cd?placeholderIfAbsent=true", text: "Energy & Utilities" }
+                  {
+                    icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/655c706a0e3b0271fae8a2d870e6a218ddac0296?placeholderIfAbsent=true",
+                    text: "Telecommunications",
+                  },
+                  {
+                    icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/f76416afe384225b86c2f5ec4e3c53a420344ce5?placeholderIfAbsent=true",
+                    text: "Technology",
+                  },
+                  {
+                    icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/1aeeb1bef7c3439d6305f5cbf1accf3895da4c8b?placeholderIfAbsent=true",
+                    text: "Finance & Banking",
+                  },
+                  {
+                    icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/9b68ddddd0e8582e15de06d9c219487a31a5d0cd?placeholderIfAbsent=true",
+                    text: "Energy & Utilities",
+                  },
                 ].map((item, index) => (
-                  <div key={index} className={`flex gap-3.5 ${index > 0 ? 'mt-[9px]' : ''} ${index < 2 ? 'whitespace-nowrap' : ''}`}>
+                  <div
+                    key={index}
+                    className={`flex gap-3.5 ${index > 0 ? "mt-[9px]" : ""} ${index < 2 ? "whitespace-nowrap" : ""}`}
+                  >
                     <img
                       src={item.icon}
                       alt="Industry Icon"
@@ -178,7 +218,7 @@ const ServicesShowcase = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="relative flex min-w-60 gap-[40px_100px] overflow-hidden flex-1 shrink basis-[0%] pl-[641px] max-md:max-w-full">
             <div className="absolute flex min-w-60 flex-col w-[642px] h-[542px] left-0 bottom-0 max-md:max-w-full">
               <div className="flex flex-col relative min-h-[542px] overflow-hidden rounded-[13px] max-md:max-w-full">
@@ -198,24 +238,24 @@ const ServicesShowcase = () => {
           </div>
         </div>
       </div>
-      
-      <div className="bg-[rgba(246,246,246,1)] flex min-h-[916px] w-full flex-col items-center text-center justify-center mt-11 px-[92px] py-[100px] max-md:mt-10 max-md:px-5">
+
+      <div className="bg-[rgba(246,246,246,1)] flex min-h-[916px] w-full flex-col items-center justify-center mt-11 px-[92px] py-[100px] max-md:mt-10 max-md:px-5">
         <div className="flex w-[1188px] max-w-full flex-col items-center">
           <div className="w-[961px] max-w-full">
-            <div className="w-full text-[84px] max-md:text-[40px]">
-              <h2 className="text-[rgba(34,34,34,1)] font-medium leading-none tracking-[-1.76px] max-md:text-[40px]">
+            <div className="w-full flex flex-col items-center text-7xl max-md:text-[40px]">
+              <h2 className="text-[rgba(34,34,34,1)] font-medium  max-md:text-[40px]">
                 We're with you in every{" "}
               </h2>
-              <div className="font-semibold leading-loose tracking-[-3.54px] max-md:text-[40px]">
+              <div className="font-semibold  max-md:text-[40px] bg-primary-gradient bg-clip-text text-transparent">
                 Step of the way.
               </div>
             </div>
-            <p className="text-[rgba(34,34,34,1)] text-[19px] font-normal leading-[30px] mt-6 max-md:max-w-full">
+            <p className="text-[rgba(34,34,34,1)] text-[19px] font-normal text-center leading-[30px] mt-6 max-md:max-w-full">
               No matter if you're launching your first project, rapidly
-              expanding your operations, or managing intricate challenges,
-              we stand by your side at every crucial milestone. Our
-              commitment is to provide you with clear insights, drive
-              momentum, and create meaningful impact every step of the way.
+              expanding your operations, or managing intricate challenges, we
+              stand by your side at every crucial milestone. Our commitment is
+              to provide you with clear insights, drive momentum, and create
+              meaningful impact every step of the way.
             </p>
           </div>
           <img

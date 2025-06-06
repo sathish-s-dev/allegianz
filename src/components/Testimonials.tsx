@@ -1,23 +1,19 @@
-import React from 'react';
+import React from "react";
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="bg-white flex min-h-[997px] max-w-full w-[1514px] flex-col items-center justify-center pl-[92px] py-[63px] max-md:pl-5">
-      <div className="min-h-[872px] w-full max-w-[1422px]">
-        <div className="relative flex w-[981px] max-w-full gap-[-309px] text-[70px] text-[rgba(179,179,179,1)] font-[450] tracking-[-0.78px] flex-wrap px-[70px] max-md:text-[40px] max-md:px-5">
-          <h2 className="text-[rgba(34,34,34,1)] leading-[78px] grow shrink w-[546px] max-md:max-w-full max-md:text-[40px] max-md:leading-[50px]">
-            A reliable partner for
-            <br />
-            wide
+    <section
+      id="testimonials"
+      className="bg-white flex min-h-[997px] max-w-full w-[1514px] flex-col items-center justify-center py-[63px] max-md:pl-5"
+    >
+      <div className="min-h-[872px] w-full max-w-screen-2xl">
+        <div className="relative flex text-[70px] max-w-4xl font-[450] tracking-[-0.78px] flex-wrap px-[70px] max-md:text-[40px] max-md:px-5">
+          <h2 className="text-[rgba(34,34,34,1)]  grow shrink  max-md:max-w-full max-md:text-[40px] max-md:leading-[50px]">
+            A reliable partner for wide <span className="text-[rgba(179,179,179,1)]"> world-class quality and on-time delivery</span>
           </h2>
-          <div className="leading-none grow shrink w-[547px] max-md:max-w-full max-md:text-[40px]">
-            and on-time delivery
-          </div>
-          <div className="text-[71px] leading-[1.1] absolute w-[496px] h-[78px] grow shrink right-32 top-[78px] max-md:max-w-full max-md:text-[40px]">
-            world-class quality
-          </div>
+         
         </div>
-        
+
         <div className="bg-[rgba(246,246,246,1)] flex w-full flex-col mt-[60px] px-[39px] max-md:mt-10 max-md:pl-5">
           <div className="flex mr-[-148px] items-center flex-wrap">
             <div className="bg-[rgba(246,246,246,1)] flex min-w-60 flex-col items-stretch text-[rgba(179,179,179,1)] font-[450] w-[383px] pl-[123px] pr-[124px] pt-[119px] pb-[127px] border-[rgba(239,239,239,1)] border-r max-md:px-5 max-md:py-[100px]">
@@ -33,9 +29,12 @@ const Testimonials = () => {
                 <div>124 reviews</div>
               </div>
             </div>
-            
+
             {[1, 2, 3].map((index) => (
-              <article key={index} className="bg-[rgba(246,246,246,1)] min-w-60 min-h-[512px] w-[383px] pl-[39px] pr-[73px] py-10 border-[rgba(227,227,227,1)] border-r max-md:px-5">
+              <article
+                key={index}
+                className="bg-[rgba(246,246,246,1)] min-w-60 min-h-[512px] w-[383px] pl-[39px] pr-[73px] py-10 border-[rgba(227,227,227,1)] border-r max-md:px-5"
+              >
                 <div className="text-[rgba(179,179,179,1)] text-[11px] font-[450] leading-[1.2] tracking-[0.47px] uppercase">
                   ABA Bank
                 </div>
@@ -50,7 +49,9 @@ const Testimonials = () => {
                   <cite className="text-[rgba(34,34,34,1)] text-lg font-normal leading-[23px] tracking-[0.34px] not-italic">
                     <span className="font-[450]">Vandyrichat Chhay</span>
                     <br />
-                    <span className="font-[450] text-[rgba(179,179,179,1)]">Manager</span>
+                    <span className="font-[450] text-[rgba(179,179,179,1)]">
+                      Manager
+                    </span>
                   </cite>
                 </div>
               </article>

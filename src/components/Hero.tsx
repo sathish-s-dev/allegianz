@@ -2,8 +2,8 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="bg-white w-full flex flex-col h-screen overflow-hidden max-w-[95%] items-center justify-center py-5">
-      <div className="relative w-full max-w-screen-xl">
+    <section className="bg-white w-full flex flex-col h-screen overflow-hidden max-w-screen-2xl mx-6 items-center justify-center py-5">
+      <div className="relative w-full max-w-screen-2xl">
         <img
           src="https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/f5b453745035e578a4c26d1e3a2652f20aca0a5a?placeholderIfAbsent=true"
           alt="Hero Background"
