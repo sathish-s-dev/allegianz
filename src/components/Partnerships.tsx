@@ -24,48 +24,40 @@ const Partnerships = () => {
   ];
 
   return (
-    <section className="bg-[rgba(246,246,246,1)] flex w-full max-w-screen-2xl items-center overflow-hidden flex-wrap pl-1 pr-[110px] max-md:pr-5">
+    <section className="bg-[rgba(246,246,246,1)] py-12 flex w-full max-w-screen-2xl items-center overflow-hidden pl-1 pr-[110px] max-md:pr-5">
       <div className="min-w-60 overflow-hidden grow shrink w-[258px] px-[70px] max-md:px-5">
         <div className="flex gap-[21px]">
-          <div className="w-[168px] pb-[315px] max-md:pb-[100px]">
+          <div className="w-[168px]">
             {partnerLogos.map((partner, index) => (
               <div
                 key={index}
-                className={`bg-white shadow-[0px_37px_67px_rgba(0,0,0,0.08)] w-full rounded-[202px] ${index > 0 ? "mt-[13px]" : ""} ${partner.single ? "flex flex-col items-stretch justify-center px-4 py-[89px]" : "pb-[65px] px-[17px] max-md:px-5"}`}
+                className={`bg-white overflow-hidden flex justify-center items-center aspect-[1/1.5] shadow-[0px_37px_67px_rgba(0,0,0,0.08)] w-full rounded-[202px] ${index > 0 ? "mt-[13px]" : ""}`}
               >
-                {partner.single ? (
+                <div className="flex flex-col items-stretch">
                   <img
-                    src={partner.single}
+                    src={partner.top}
                     alt="Partner Logo"
-                    className="aspect-[2.4] object-contain w-full"
+                    className={`object-contain self-center ${index === 0 ? "aspect-[1.07] w-[46px]" : index === 1 ? "aspect-[1.12] w-[73px]" : "aspect-[0.91] w-[61px]"}`}
                   />
-                ) : (
-                  <div className="flex flex-col items-stretch">
-                    <img
-                      src={partner.top}
-                      alt="Partner Logo"
-                      className={`object-contain self-center ${index === 0 ? "aspect-[1.07] w-[46px]" : index === 1 ? "aspect-[1.12] w-[73px]" : "aspect-[0.91] w-[61px]"}`}
-                    />
-                    <img
-                      src={partner.bottom}
-                      alt="Partner Logo"
-                      className={`object-contain w-full mt-1 ${index === 0 ? "aspect-[2.11]" : index === 1 ? "aspect-[3.27]" : "aspect-[1.85]"}`}
-                    />
-                  </div>
-                )}
+                  <img
+                    src={partner.bottom}
+                    alt="Partner Logo"
+                    className={`object-contain w-full mt-1 ${index === 0 ? "aspect-[2.11]" : index === 1 ? "aspect-[3.27]" : "aspect-[1.85]"}`}
+                  />
+                </div>
               </div>
             ))}
           </div>
         </div>
       </div>
 
-      <div className="flex min-w-60 flex-col items-stretch text-[rgba(34,34,34,1)] grow shrink w-[1011px] max-md:max-w-full">
-        <div className="self-center h-[250px] max-w-full w-[1065px] text-[120px] font-[450] whitespace-nowrap tracking-[-5.25px] leading-none max-md:text-[40px]">
+      <div className="flex min-w-60 flex-col items-stretch text-[rgba(34,34,34,1)] grow shrink max-w-screen-xl max-md:max-w-full">
+        <div className=" h-[250px] max-w-screen-xl text-8xl font-[450] whitespace-nowrap tracking-[-5.25px] leading-none max-md:text-[40px]">
           <h2 className="max-md:text-[40px]">Extensive</h2>
           <div className="max-md:text-[40px]">Partnerships</div>
         </div>
 
-        <div className="text-2xl font-normal leading-10 mt-[69px] max-md:mt-10">
+        <div className="md:text-xl font-normal leading-10 max-md:mt-10">
           <p>
             Allegianz has always been flexible in its policies regarding its
             founders and partners venturing into businesses of its erstwhile

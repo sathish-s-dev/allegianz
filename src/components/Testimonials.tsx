@@ -15,7 +15,7 @@ const Testimonials = () => {
         </div>
 
         <div className="bg-[rgba(246,246,246,1)] flex w-full flex-col mt-[60px] px-[39px] max-md:mt-10 max-md:pl-5">
-          <div className="flex mr-[-148px] items-center flex-wrap">
+          <div className="flex  items-center flex-wrap">
             <div className="bg-[rgba(246,246,246,1)] flex min-w-60 flex-col items-stretch text-[rgba(179,179,179,1)] font-[450] w-[383px] pl-[123px] pr-[124px] pt-[119px] pb-[127px] border-[rgba(239,239,239,1)] border-r max-md:px-5 max-md:py-[100px]">
               <div className="w-full text-[92px] whitespace-nowrap tracking-[-1.02px] leading-none max-md:text-[40px]">
                 <div className="max-md:text-[40px]">4.6</div>

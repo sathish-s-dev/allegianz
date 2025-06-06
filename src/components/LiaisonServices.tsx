@@ -81,9 +81,9 @@ const LiaisonServices = () => {
   ];
 
   return (
-    <section className="bg-white flex w-full max-w-[1514px] items-center gap-2.5 pt-[66px] pb-[95px] px-[81px] max-md:px-5">
-      <div className="flex min-w-60 gap-[40px_106px] flex-wrap">
-        <div className="min-w-60 w-[553px] max-md:max-w-full">
+    <section className="bg-white flex w-full max-w-screen-xl items-center gap-2.5 pt-[66px] pb-[95px] px-6   max-md:px-5">
+      <div className="grid grid-cols-2 flex-wrap relative">
+        <div className="min-w-60 w-full max-md:max-w-full sticky top-0 h-fit py-4">
           <div className="flex w-full items-center text-[78px] gap-4 font-medium whitespace-nowrap flex-wrap max-md:text-[40px]">
             <h2 className="text-[rgba(34,34,34,1)] shrink max-md:text-[40px]">
               Laison
@@ -99,15 +99,15 @@ const LiaisonServices = () => {
           </p>
         </div>
 
-        <div className="min-w-60 text-[rgba(34,34,34,1)] w-[669px] max-md:max-w-full">
+        <div className="min-w-60 text-[rgba(34,34,34,1)] w-full max-md:max-w-full">
           {services.map((service, index) => (
             <article
               key={index}
-              className={`bg-white w-full overflow-hidden rounded-[13px] ${index > 0 ? "mt-[55px] max-md:mt-10" : ""}`}
+              className={`bg-gradient-to-bl from-[#3A2883] via-[white] to-white w-full overflow-hidden rounded-[13px] ${index > 0 ? "mt-[55px] max-md:mt-10" : ""}`}
             >
               <div className="border flex flex-col items-stretch justify-center px-[58px] py-[79px] rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:px-5">
                 <div>
-                  <h3 className="w-full text-7xl font-medium tracking-[-0.67px] leading-none pr-14 pb-px max-md:pr-5">
+                  <h3 className="w-full text-4xl font-medium tracking-[-0.67px] leading-none pr-14 pb-px max-md:pr-5">
                     {service.title}
                   </h3>
                   <div className="flex w-full flex-col items-stretch text-xl text-[rgba(112,109,121,1)] font-[450] tracking-[-0.38px] leading-[23px] justify-center mt-5">
@@ -117,7 +117,7 @@ const LiaisonServices = () => {
                     {service.features.map((feature, featureIndex) => (
                       <div
                         key={featureIndex}
-                        className={`flex gap-3.5 flex-wrap ${featureIndex > 0 ? "mt-[9px]" : ""}`}
+                        className={`flex gap-3.5 ${featureIndex > 0 ? "mt-[9px]" : ""}`}
                       >
                         <img
                           src={feature.icon}

@@ -46,7 +46,7 @@ const InsightHub = () => {
         <div className="w-[1314px] max-w-full">
           <div className="max-w-full text-7xl font-medium max-md:text-[40px]">
             <div className="flex w-full items-center flex-wrap max-md:text-[40px]">
-              <h2 className="text-[rgba(34,34,34,1)] max-md:text-[40px]">
+              <h2 className="text-[rgba(34,34,34,1)] max-md:text-[40px] py-4">
                 The{" "}
                 <span className=" text-center max-md:text-[40px] bg-primary-gradient bg-clip-text text-transparent">
                   Insight Hub.

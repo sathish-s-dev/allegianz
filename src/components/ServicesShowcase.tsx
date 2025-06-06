@@ -259,9 +259,9 @@ const ServicesShowcase = () => {
             </p>
           </div>
           <img
-            src="https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/368bef86178c53fa2d434d3911f7f29085ee4313?placeholderIfAbsent=true"
+            src="/graph.svg"
             alt="Step by Step Process"
-            className="aspect-[3.14] object-contain w-full"
+            className="md:-mt-[200px] w-full"
           />
         </div>
       </div>

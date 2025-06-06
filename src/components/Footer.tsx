@@ -9,7 +9,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-black w-full max-w-[1518px] pt-1.5 pb-[33px] px-20 max-md:px-5">
+    <footer className="bg-black w-full py-12 px-20 max-md:px-5">
       <div className="pb-8 border-[rgba(84,84,84,1)] border-b max-md:pr-5">
         <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
           <div className="w-[64%] max-md:w-full max-md:ml-0">

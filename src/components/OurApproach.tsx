@@ -35,8 +35,8 @@ const OurApproach = () => {
     >
       <div className="bg-[rgba(255,255,255,0)] flex min-h-[307px] w-full flex-col pt-[38px] pb-[67px] px-[83px] max-md:px-5">
         <div className="w-[1280px] max-w-full">
-          <div className="w-[528px] max-w-full text-7xl font-medium whitespace-nowrap max-md:text-[40px]">
-            <div className="flex w-full justify-center gap-4 flex-wrap max-md:text-[40px]">
+          <div className="text-left max-w-full text-7xl font-medium whitespace-nowrap max-md:text-[40px]">
+            <div className="flex w-full py-4 gap-4 flex-wrap max-md:text-[40px]">
               <h2 className="text-[rgba(22,22,22,1)] max-md:text-[40px]">
                 Our
               </h2>
