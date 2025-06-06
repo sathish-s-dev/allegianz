@@ -2,14 +2,14 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="bg-white w-full flex flex-col items-center justify-center py-5">
-      <div className="relative w-[1475px] max-w-full">
+    <section className="bg-white w-full flex flex-col h-screen overflow-hidden max-w-[95%] items-center justify-center py-5">
+      <div className="relative w-full max-w-screen-xl">
         <img
           src="https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/f5b453745035e578a4c26d1e3a2652f20aca0a5a?placeholderIfAbsent=true"
           alt="Hero Background"
           className="aspect-[1.79] object-contain w-full rounded-[20px]"
         />
-        <div className="bg-[rgba(0,0,0,0.2)] absolute inset-0 flex min-h-[825px] w-full flex-col items-stretch justify-center px-[27px] py-[58px] rounded-[20px] max-md:px-5">
+        <div className="bg-[rgba(0,0,0,0.2)] absolute inset-0 flex w-full flex-col items-stretch justify-center px-[27px] py-[58px] rounded-[20px] max-md:px-5">
           <div className="flex max-w-full w-[1412px] flex-col items-stretch">
             <div className="bg-[rgba(255,255,255,0.15)] flex min-h-px w-full" />
             
@@ -20,8 +20,8 @@ const Hero = () => {
             />
             
             <div className="flex w-full flex-col items-stretch mt-[19px]">
-              <div className="flex w-full flex-col items-stretch">
-                <div className="w-[658px] max-w-full text-white">
+              <div className="flex w-full flex-row-reverse h-[60vh]">
+                <div className="w-full max-w-full flex flex-col gap-4 text-white">
                   <div className="text-xl font-medium leading-none tracking-[-0.34px] max-md:max-w-full">
                     Get Started with Alliganz
                   </div>
@@ -32,31 +32,31 @@ const Hero = () => {
                     <br />
                     We Deliver it.
                   </h1>
-                </div>
-                
-                <div className="flex w-full flex-col items-stretch text-xl mt-7">
-                  <div className="bg-[rgba(255,255,255,0.15)] flex min-h-px w-full" />
-                  
-                  <div className="flex gap-[40px_186px] flex-wrap mt-4 px-[103px] max-md:px-5">
-                    <p className="text-white font-bold leading-[27px] tracking-[-0.34px] w-[465px] max-md:max-w-full">
-                      We help companies reimagine, modernize, and scale
-                      through purpose-built technology and smart delivery
-                      models.
-                    </p>
-                    
-                    <div className="relative flex min-w-60 flex-col text-[rgba(34,34,34,1)] font-medium text-center leading-loose w-64 rounded-[64px]">
-                      <div className="bg-[rgba(255,255,255,0.3)] flex min-h-[72px] w-full rounded-[80px]" />
-                      <button className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white shadow-[0px_2px_4px_rgba(0,0,0,0.1)] flex items-center gap-2 px-[18px] py-3 rounded-[48px] hover:shadow-lg transition-shadow">
+
+                  <div className="relative flex min-w-60 flex-col text-[rgba(34,34,34,1)] font-medium text-center leading-loose w-64 rounded-[64px]">
+                      <div className="bg-gradient-to-r from-[#FF7448] via-[#FF4848] to-[#6248FF] flex p-1.5 w-full rounded-[80px] flex justify-center items-center">
+                      <button className="bg-white shadow-[0px_2px_4px_rgba(0,0,0,0.1)] flex items-center gap-2 px-4 py-2 w-full rounded-[48px] hover:shadow-lg transition-shadow">
                         <img
                           src="https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/9a0cf6c5444257e0d8733c6d93094700164e3f39?placeholderIfAbsent=true"
                           alt="Start Icon"
-                          className="aspect-[1] object-contain w-6 shrink-0 rounded-3xl"
+                          className="aspect-[1] object-contain w-8 shrink-0 rounded-3xl"
                         />
                         <span className="w-[172px]">
                           Start your project
                         </span>
                       </button>
+                      </div>
                     </div>
+                </div>
+                
+                <div className="flex w-full h-full justify-end items-end flex-col text-xl">
+                  <div className="bg-[rgba(255,255,255,0.15)] flex min-h-px w-full" />
+                  <div className="flex gap-[40px_186px] flex-wrap mt-4 px-[103px] max-md:px-5">
+                    <p className="text-white leading-[27px] tracking-[-0.34px] w-[465px] max-md:max-w-full">
+                      We help companies reimagine, modernize, and scale
+                      through purpose-built technology and smart delivery
+                      models.
+                    </p>
                   </div>
                 </div>
               </div>
