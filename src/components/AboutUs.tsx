@@ -14,7 +14,7 @@ const AboutUs = () => {
           </h2>
         </div>
         
-        <div className="text-3xl flex flex-col gap-6 font-light leading-[44px] max-md:max-w-full">
+        <div className="text-3xl max-md:text-lg flex flex-col gap-6 font-light leading-[44px] max-md:max-w-full">
           <p>
             We offering business and financial consulting services, ranging
             from turnkey solutions to startups, greenfield projects, and early

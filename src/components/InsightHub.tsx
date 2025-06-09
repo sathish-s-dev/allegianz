@@ -1,4 +1,5 @@
 import React from "react";
+import { cn } from "@/lib/utils";
 
 const InsightHub = () => {
   const newsItems = [
@@ -142,24 +143,52 @@ const InsightHub = () => {
             ))}
           </div>
         </div>
-
-        <div className="flex w-full flex-col justify-center mt-16 px-[70px] py-px max-md:mt-10 max-md:px-5">
-          <div className="flex items-center gap-2.5">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/a13ebd00474d30eeea5c67cdf4ea5d9cc1df5037?placeholderIfAbsent=true"
-              alt="Navigation Dot"
-              className="aspect-[2.12] object-contain w-[34px] shrink-0 rounded-2xl"
-            />
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/5fb32796dd50317bc3d0293771ba30b3c44baae7?placeholderIfAbsent=true"
-              alt="Navigation Dot"
-              className="aspect-[2.12] object-contain w-[34px] shrink-0 rounded-2xl"
-            />
-          </div>
-        </div>
+        <CarousalControls totalItems={newsItems.length} currentIndex={0} />
       </div>
     </section>
   );
 };
 
 export default InsightHub;
+
+export function CarousalControls({
+  totalItems,
+  currentIndex = 0,
+}: {
+  totalItems: number;
+  currentIndex: number;
+}) {
+  return (
+    <div className="flex w-full flex-col justify-center py-4  max-md:mt-10 max-md:px-5">
+      <div className="flex justify-end items-center gap-2.5">
+        <button className="p-1 bg-black rounded-lg">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/a13ebd00474d30eeea5c67cdf4ea5d9cc1df5037?placeholderIfAbsent=true"
+            alt="Navigation Dot"
+            className="aspect-[2.12] object-contain w-[34px] shrink-0 rounded-2xl"
+          />
+        </button>
+        <button className="p-1 bg-black rounded-lg">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/5fb32796dd50317bc3d0293771ba30b3c44baae7?placeholderIfAbsent=true"
+            alt="Navigation Dot"
+            className="aspect-[2.12] object-contain w-[34px] shrink-0 rounded-2xl"
+          />
+        </button>
+      </div>
+      <div className="flex gap-3 self-center">
+        {Array.from({ length: totalItems }, (_, index) => (
+          <button
+            key={index}
+            className={cn(
+              "size-2  ring-gray-200 ring-offset-1 bg-gray-200 rounded-full",
+              {
+                "bg-gray-800 ring-2 ring-gray-800": index === currentIndex,
+              }
+            )}
+          ></button>
+        ))}
+      </div>
+    </div>
+  );
+}

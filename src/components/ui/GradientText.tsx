@@ -1,4 +1,5 @@
 import React from "react";
+import { cn } from "@/lib/utils";
 
 const GradientText = ({
   children,
@@ -8,7 +9,7 @@ const GradientText = ({
   className?: string;
 }) => {
   return (
-    <span className="bg-clip-text text-transparent bg-primary-gradient">
+    <span className={cn("bg-clip-text text-transparent bg-primary-gradient leading-[1.4] -mt-4", className)}>
       {children}
     </span>
   );

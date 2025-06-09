@@ -20,10 +20,10 @@ const TrustedBrands = () => {
               </div>
               <div className="text-[rgba(34,34,34,1)] text-3xl font-normal leading-none tracking-[-0.26px]">
                 <span className="font-[450]">95% </span>
-                <span className="font-[450] text-black">Satisfaction rate</span>
+                <span className="font-[450] text-black/50">Satisfaction rate</span>
               </div>
             </div>
-            <p className="text-black text-base font-[450] leading-none">
+            <p className="text-black/65 text-base font-[450] leading-none">
               From our Clients in Every projects
             </p>
           </div>

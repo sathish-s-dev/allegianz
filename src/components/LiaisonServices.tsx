@@ -103,7 +103,7 @@ const LiaisonServices = () => {
           {services.map((service, index) => (
             <article
               key={index}
-              className={`bg-[linear-gradient(to_bottom_left,_#3A2883,_#D3A6F7,_#E8D6F5,_#F9F9FD,_#FAFAFD)] w-full overflow-hidden rounded-[13px] ${index > 0 ? "mt-[55px] max-md:mt-10" : ""}`}
+              className={`bg-[linear-gradient(to_bottom_left,_#3A2883,_#D3A6F7,_#E8D6F5,_#F9F9FD_30%,_#FAFAFD)] w-full overflow-hidden rounded-[13px] ${index > 0 ? "mt-[55px] max-md:mt-10" : ""}`}
             >
               <div className="border flex flex-col items-stretch justify-center p-10 rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:px-5">
                 <div>

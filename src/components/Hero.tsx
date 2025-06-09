@@ -2,13 +2,13 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="bg-white w-full flex flex-col px-3 h-screen rounded-lg max-w-screen-2xl items-center justify-center">
-      <div className="relative w-full h-full isolate overflow-hidden rounded-xl after:bg-gradient-to-t to-black/30 from-black/30 after:inset-0 after:z-0 after:absolute">
+    <section className="bg-white w-full flex flex-col px-3 min-h-[90vh] rounded-lg max-w-screen-2xl items-center justify-center">
+      <div className="relative w-full h-[90vh] isolate overflow-hidden rounded-xl after:bg-gradient-to-t to-black/30 from-black/30 after:inset-0 after:z-0 after:absolute">
         <div className="absolute inset-0 z-[-1]">
           <img
             src="https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/f5b453745035e578a4c26d1e3a2652f20aca0a5a?placeholderIfAbsent=true"
             alt="Hero Background"
-            className="aspect-[1.79] object-contain w-full"
+            className="aspect-[1.79] h-full object-cover w-full"
           />
         </div>
         <div className="h-full flex w-full relative z-[1] flex-col items-stretch justify-center px-[27px] py-[58px] max-md:px-5">
@@ -17,10 +17,10 @@ const Hero = () => {
             <img
               src="https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/08f65df74e319690be5f2ce35e53f6ce37d304b7?placeholderIfAbsent=true"
               alt="Allegianz Logo"
-              className="aspect-[1.24] object-contain w-[104px] absolute self-center max-w-full mt-[19px]"
+              className="aspect-[1.24] object-contain w-[104px] max-md:w-10 absolute self-center max-w-full mt-[19px]"
             />
 
-            <div className="flex w-full px-12 h-full mx-auto justify-center flex-col items-center">
+            <div className="flex w-full md:px-12 h-full mx-auto justify-center flex-col items-center">
               <div className="flex w-full gap-12 flex-col h-full justify-center items-center">
                 <div className="w-full max-w-full flex flex-col gap-4 text-white">
                   <div className="text-xl font-medium leading-none tracking-[-0.34px] max-md:max-w-full">
@@ -33,7 +33,7 @@ const Hero = () => {
                   </h1>
                 </div>
 
-                <div className="flex w-full justify-between py-4 relative">
+                <div className="flex w-full flex-col md:flex-row gap-4 justify-between py-4 relative">
                   <div className="bg-[rgba(255,255,255,0.15)] flex h-px top-0 w-full absolute" />
 
                   <div className="relative flex min-w-60 gap-12 flex-col text-[rgba(34,34,34,1)] font-medium text-center leading-loose w-64 rounded-[64px]">
@@ -49,7 +49,7 @@ const Hero = () => {
                     </div>
                   </div>
                   <div className="flex w-full h-full justify-en items-end flex-col text-xl">
-                    <div className="flex gap-[40px_186px] flex-wrap max-md:px-5">
+                    <div className="flex gap-[40px_186px] flex-wrap">
                       <p className="text-white   max-md:max-w-full max-w-lg">
                         We help companies reimagine, modernize, and scale
                         through purpose-built technology and smart delivery

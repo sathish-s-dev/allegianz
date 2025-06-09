@@ -1,10 +1,11 @@
+import { CarousalControls } from "./InsightHub";
 import React from "react";
 
 const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="bg-white flex min-h-[997px] max-w-full w-[1514px] flex-col items-center justify-center py-[63px] max-md:pl-5"
+      className="bg-white flex min-h-[997px] max-w-full w-[1514px] flex-col items-center justify-center py-[63px] max-md:pl-5 scroll-mt-8"
     >
       <div className="min-h-[872px] w-full max-w-screen-2xl">
         <div className="relative flex text-[70px] max-w-4xl font-[450] tracking-[-0.78px] flex-wrap px-[70px] max-md:text-[40px] max-md:px-5">
@@ -60,6 +61,7 @@ const Testimonials = () => {
               </article>
             ))}
           </div>
+          <CarousalControls totalItems={5} currentIndex={0} />
         </div>
       </div>
     </section>

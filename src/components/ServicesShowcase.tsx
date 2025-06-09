@@ -1,3 +1,4 @@
+import GradientText from "./ui/GradientText";
 import React from "react";
 
 const ServicesShowcase = () => {
@@ -52,7 +53,7 @@ const ServicesShowcase = () => {
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className="flex w-full max-w-[532px] flex-col items-stretch justify-center px-[13px] py-3 rounded-lg"
+                    className="flex w-full hover:bg-gray-100 max-w-[532px] flex-col items-stretch justify-center px-[13px] py-3 rounded-lg"
                   >
                     <div className="flex w-full gap-2 flex-wrap">
                       <img
@@ -172,7 +173,7 @@ const ServicesShowcase = () => {
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className={`flex gap-3.5 ${index > 0 ? "mt-[9px]" : ""}`}
+                    className={`flex gap-3.5 hover:bg-gray-100 ${index > 0 ? "mt-[9px]" : ""}`}
                   >
                     <img
                       src={item.icon}
@@ -205,7 +206,7 @@ const ServicesShowcase = () => {
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className={`flex gap-3.5 ${index > 0 ? "mt-[9px]" : ""} ${index < 2 ? "whitespace-nowrap" : ""}`}
+                    className={`flex gap-3.5 hover:bg-gray-100 ${index > 0 ? "mt-[9px]" : ""} ${index < 2 ? "whitespace-nowrap" : ""}`}
                   >
                     <img
                       src={item.icon}
@@ -246,9 +247,9 @@ const ServicesShowcase = () => {
               <h2 className="text-[rgba(34,34,34,1)] font-medium  max-md:text-[40px]">
                 We're with you in every{" "}
               </h2>
-              <div className="font-semibold  max-md:text-[40px] bg-primary-gradient bg-clip-text text-transparent">
+              <GradientText className="font-semibold  max-md:text-[40px] bg-primary-gradient bg-clip-text text-transparent">
                 Step of the way.
-              </div>
+              </GradientText>
             </div>
             <p className="text-[rgba(34,34,34,1)] text-[19px] font-normal text-center leading-[30px] mt-6 max-md:max-w-full">
               No matter if you're launching your first project, rapidly
@@ -259,9 +260,9 @@ const ServicesShowcase = () => {
             </p>
           </div>
           <img
-            src="/graph.svg"
+            src="/graph.png"
             alt="Step by Step Process"
-            className="md:-mt-[200px] w-full"
+            className="w-full"
           />
         </div>
       </div>

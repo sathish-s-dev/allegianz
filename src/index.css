@@ -100,7 +100,11 @@
     @apply bg-background text-foreground;
   }
 
-  /* body, html{
-    overflow-x: hidden;
-  } */
+  body,
+  html {
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }

@@ -21,12 +21,26 @@ const GlobalPresence = () => {
           </p>
         </div>
 
-        <div className="bg-[rgba(249,249,249,1)] flex w-full flex-col items-center justify-center mt-[31px] px-20 py-[74px] max-md:px-5">
+        <div className="bg-[rgba(249,249,249,1)] relative flex w-full flex-col items-center justify-center mt-[31px] px-20 py-[74px] max-md:px-5 hover:cursor-pointer group">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/e8f0080530abdbce8515f1d5dba0af9dcc83d08f?placeholderIfAbsent=true"
+            src="/global-presense.png"
             alt="Global Presence Map"
             className="aspect-[1.97] object-contain w-[1000px] max-w-full"
           />
+          <div className="absolute inset-0 bg-black/5 backdrop-blur-sm group-hover:opacity-100 transition duration-200 opacity-0 flex justify-center items-center">
+            <div className="relative flex min-w-60 gap-12 flex-col text-[rgba(34,34,34,1)] font-medium text-center leading-loose w-64 rounded-[64px] hover:scale-105">
+              <div className="bg-gradient-to-r from-[#FF7448] via-[#FF4848] to-[#6248FF] flex p-1.5 w-full rounded-[80px] flex justify-center items-center">
+                <button className="bg-white shadow-[0px_2px_4px_rgba(0,0,0,0.1)] flex items-center gap-2 px-4 py-2 w-full rounded-[48px] hover:shadow-lg transition-shadow">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/9a0cf6c5444257e0d8733c6d93094700164e3f39?placeholderIfAbsent=true"
+                    alt="Start Icon"
+                    className="aspect-[1] object-contain w-8 shrink-0 rounded-3xl"
+                  />
+                  <span className="w-[172px]">Start your project</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
