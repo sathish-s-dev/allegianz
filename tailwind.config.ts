@@ -62,6 +62,7 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "light-text": "rgba(179,179,179,0.7)"
       },
       borderRadius: {
         lg: "var(--radius)",

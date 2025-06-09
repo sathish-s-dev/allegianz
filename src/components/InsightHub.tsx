@@ -98,7 +98,7 @@ const InsightHub = () => {
           </p>
         </div>
 
-        <div className="flex w-full items-center gap-[40px_85px] mt-16 max-md:mt-10">
+        <div className="flex w-full items-center gap-[40px_85px] overflow-scroll mt-16 max-md:mt-10">
           <div className="text-[rgba(34,34,34,1)] w-[237px]  flex-shrink-0">
             <h3 className="text-[34px] font-medium leading-none">
               Latest News
@@ -109,7 +109,7 @@ const InsightHub = () => {
             </p>
           </div>
 
-          <div className="flex min-w-60 items-center gap-[13px] overflow-scroll max-md:max-w-full">
+          <div className="flex min-w-60 items-center gap-[13px] max-md:max-w-full">
             {newsItems.map((item, index) => (
               <article
                 key={index}

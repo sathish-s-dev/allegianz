@@ -99,4 +99,8 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* body, html{
+    overflow-x: hidden;
+  } */
 }

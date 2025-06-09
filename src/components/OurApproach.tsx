@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "motion/react";
 
 const OurApproach = () => {
   const approaches = [
@@ -10,7 +11,7 @@ const OurApproach = () => {
     },
     {
       icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/6d173ebcd522c8c6937f2326b221ff1ad5768220?placeholderIfAbsent=true",
-      title: "StrategyDevelopment",
+      title: "Strategy Development",
       description:
         "We begin with a thorough assessment of your business, market position, and challenges. This helps us understand your needs and define a clear path forward.",
     },
@@ -22,7 +23,7 @@ const OurApproach = () => {
     },
     {
       icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/4fdf8f13bb5eba2454d6872e9ea8756795c62a5c?placeholderIfAbsent=true",
-      title: "SustainedImprovement",
+      title: "Sustained Improvement",
       description:
         "We begin with a thorough assessment of your business, market position, and challenges. This helps us understand your needs and define a clear path forward.",
     },
@@ -31,7 +32,7 @@ const OurApproach = () => {
   return (
     <section
       id="approach"
-      className="bg-[rgba(246,246,246,1)] max-w-full w-[1514px]"
+      className="bg-[rgba(246,246,246,1)] max-w-full w-[1514px] overflow-hidden"
     >
       <div className="bg-[rgba(255,255,255,0)] flex min-h-[307px] w-full flex-col pt-[38px] pb-[67px] px-[83px] max-md:px-5">
         <div className="w-[1280px] max-w-full">
@@ -57,8 +58,11 @@ const OurApproach = () => {
       <div className="w-full">
         <div className="flex w-full items-center flex-wrap">
           {approaches.map((approach, index) => (
-            <article
+            <motion.article
               key={index}
+              initial={{ y: index * 75 }}
+              whileInView={{ y: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
               className="bg-white border flex min-w-60 min-h-[632px] flex-col overflow-hidden items-stretch grow shrink w-[305px] pl-6 pr-[22px] pt-6 pb-[215px] rounded-[0px_10px_0px_0px] border-[rgba(203,214,255,1)] border-solid max-md:pb-[100px] max-md:px-5"
             >
               <img
@@ -81,7 +85,7 @@ const OurApproach = () => {
                   {approach.description}
                 </p>
               </div>
-            </article>
+            </motion.article>
           ))}
         </div>
       </div>

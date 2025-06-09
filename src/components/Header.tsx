@@ -1,20 +1,14 @@
+import AllegianzLogo from "./AllegianzLogo";
 import React from "react";
 
 const Header = () => {
   return (
-    <header className="bg-white sticky top-0 z-20 shadow-[0px_4px_30px_rgba(0,0,0,0.05)] w-full px-9 py-4 max-md:px-5">
+    <header className="bg-white sticky top-0 z-20 shadow-[0px_4px_30px_rgba(0,0,0,0.05)] w-full px-9 py-3 max-md:px-5">
       <div className="max-w-screen-2xl mx-auto">
         <div className="flex w-full items-center gap-[40px_100px] justify-between flex-wrap">
-          <div className="flex items-center gap-1 text-lg text-[rgba(133,82,215,1)] font-normal leading-none">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/5a3aa2248dd21305d940d6bcbd5050321ad12724?placeholderIfAbsent=true"
-              alt="Allegianz Solutions Logo"
-              className="aspect-[0.95] object-contain w-[53px] shrink-0"
-            />
-            <div className="w-[139px]">llegianz Solutios</div>
-          </div>
+          <AllegianzLogo />
 
-          <nav className="flex min-w-60 items-center gap-[37px] flex-wrap">
+          <nav className=" min-w-60 hidden md:flex items-center gap-[37px] flex-wrap">
             <div className="flex min-w-60 items-center gap-[40px_41px] text-base text-[rgba(34,34,34,1)] font-medium tracking-[-0.34px] leading-none flex-wrap">
               <a
                 href="#about"

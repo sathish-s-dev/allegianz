@@ -26,7 +26,7 @@ const Team = () => {
           <h2>
             <span className="font-medium">Curious to know our team?</span>
             <br />
-            <span className="text-[64px] text-[rgba(179,179,179,1)]">
+            <span className="text-[64px] text-light-text">
               Meet the minds behind our innovation, strategy, and impact.
             </span>
           </h2>

@@ -83,7 +83,7 @@ const LiaisonServices = () => {
   return (
     <section className="bg-white flex w-full max-w-screen-xl items-center gap-2.5 pt-[66px] pb-[95px] px-6   max-md:px-5">
       <div className="grid grid-cols-2 flex-wrap relative">
-        <div className="min-w-60 w-full max-md:max-w-full sticky top-0 h-fit py-4">
+        <div className="min-w-60 w-full max-md:max-w-full sticky top-12 h-fit py-4">
           <div className="flex w-full items-center text-[78px] gap-4 font-medium whitespace-nowrap flex-wrap max-md:text-[40px]">
             <h2 className="text-[rgba(34,34,34,1)] shrink max-md:text-[40px]">
               Laison
