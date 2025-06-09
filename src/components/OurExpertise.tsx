@@ -49,8 +49,8 @@ const OurExpertise = () => {
           className="absolute h-full w-full object-cover inset-0"
         />
 
-        <div className="relative w-[1328px] grid md:grid-cols-4 gap-4 max-w-full items-center">
-          <div className="flex flex-col justify-end items-end shadow-[0px_0px_2px_rgba(0,0,0,0.12)] row-span-2 relative h-full overflow-hidden  rounded-[25px] min-w-60 gap-2.5 w-full pb-9 px-[25px] bg-white max-md:px-5">
+        <div className="relative w-[1328px] max-md:px-4 grid md:grid-cols-4 gap-4 max-w-full items-center">
+          <div className="flex flex-col min-h-[500px] justify-end items-end shadow-[0px_0px_2px_rgba(0,0,0,0.12)] row-span-2 relative h-full overflow-hidden  rounded-[25px] min-w-60 gap-2.5 w-full pb-9 px-[25px] bg-white max-md:px-5">
             <img
               src="https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/9f9d822a0f1c137140347e9ea76b071b057c6624?placeholderIfAbsent=true"
               alt="Expertise Background"

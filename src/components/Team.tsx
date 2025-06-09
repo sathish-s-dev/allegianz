@@ -20,19 +20,19 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="bg-white flex min-h-[966px] max-w-full w-[1514px] flex-col items-center justify-center px-[92px] py-[83px] max-md:px-5">
+    <section id="team" className="bg-white flex min-h-[966px] max-w-full w-[1514px] flex-col items-center justify-center px-[92px] max-md:py-8 py-[83px] max-md:px-5">
       <div className="flex w-full max-w-[1321px] flex-col items-stretch justify-center">
-        <div className="w-full text-[76px] text-[rgba(34,34,34,1)] font-normal tracking-[-0.84px] leading-[74px] pt-5 pb-[13px] max-md:text-[40px] max-md:leading-[44px] max-md:pr-5">
+        <div className="w-full md:text-[76px] text-[rgba(34,34,34,1)] font-normal tracking-[-0.84px] leading-[74px] pt-5 pb-[13px] max-md:text-[40px] max-md:leading-[44px] max-md:pr-5">
           <h2>
             <span className="font-medium">Curious to know our team?</span>
             <br />
-            <span className="text-[64px] text-light-text">
+            <span className=" max-md:text-3xl leading-tight md:text-[64px] text-light-text">
               Meet the minds behind our innovation, strategy, and impact.
             </span>
           </h2>
         </div>
         
-        <div className="self-center flex items-center gap-[40px_80px] text-center flex-wrap mt-[70px] max-md:mt-10">
+        <div className="self-center flex items-center justify-center gap-[40px_80px] text-center flex-wrap mt-[70px] max-md:mt-10">
           {teamMembers.map((member, index) => (
             <article key={index} className="min-w-60 w-[290px]">
               <img

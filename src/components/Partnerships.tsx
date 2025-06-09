@@ -24,26 +24,38 @@ const Partnerships = () => {
   ];
 
   return (
-    <section className="bg-[rgba(246,246,246,1)] py-12 flex w-full max-w-screen-2xl items-center overflow-hidden pl-1 pr-[110px] max-md:pr-5">
-      <div className="min-w-60 overflow-hidden grow shrink w-[258px] px-[70px] max-md:px-5">
-        <div className="flex gap-[21px]">
-          <div className="w-[168px]">
+    <section className="bg-[rgba(246,246,246,1)] py-12 flex w-full flex-col gap-6 md:flex-row max-w-screen-2xl items-center overflow-hidden pl-1 md:pr-[110px] max-md:pr-5">
+      <div className="min-w-60 overflow-hidden grow shrink md:w-[258px] px-[70px] max-md:px-5">
+        <div className="flex gap-[21px] w-full">
+          <div className="md:w-[168px] w-full flex flex-col max-md:flex-row gap-4 animate-bounce">
             {partnerLogos.map((partner, index) => (
               <div
                 key={index}
-                className={`bg-white overflow-hidden flex justify-center items-center aspect-[1/1.5] shadow-[0px_37px_67px_rgba(0,0,0,0.08)] w-full rounded-[202px] ${index > 0 ? "mt-[13px]" : ""}`}
+                className={`bg-white p-3 overflow-hidden flex justify-center items-center aspect-[1/1.5] shadow-[0px_37px_67px_rgba(0,0,0,0.08)] w-full rounded-[202px] ${index > 0 ? "mt-[13px]" : ""}`}
               >
-                <div className="flex flex-col items-stretch">
-                  <img
-                    src={partner.top}
-                    alt="Partner Logo"
-                    className={`object-contain self-center ${index === 0 ? "aspect-[1.07] w-[46px]" : index === 1 ? "aspect-[1.12] w-[73px]" : "aspect-[0.91] w-[61px]"}`}
-                  />
-                  <img
-                    src={partner.bottom}
-                    alt="Partner Logo"
-                    className={`object-contain w-full mt-1 ${index === 0 ? "aspect-[2.11]" : index === 1 ? "aspect-[3.27]" : "aspect-[1.85]"}`}
-                  />
+                <div className="flex flex-col size-10">
+                  {partner.single ? (
+                    <>
+                      <img
+                        src={partner.single}
+                        alt="Partner Logo"
+                        className={`object-contain  self-center ${index === 0 ? "aspect-[1.07] w-[46px]" : index === 1 ? "aspect-[1.12] w-[73px]" : "aspect-[0.91] w-[61px]"}`}
+                      />
+                    </>
+                  ) : (
+                    <>
+                      <img
+                        src={partner.top}
+                        alt="Partner Logo"
+                        className={`object-contain  self-center ${index === 0 ? "aspect-[1.07] w-[46px]" : index === 1 ? "aspect-[1.12] w-[73px]" : "aspect-[0.91] w-[61px]"}`}
+                      />
+                      <img
+                        src={partner.bottom}
+                        alt="Partner Logo"
+                        className={`object-contain w-full mt-1 ${index === 0 ? "aspect-[2.11]" : index === 1 ? "aspect-[3.27]" : "aspect-[1.85]"}`}
+                      />
+                    </>
+                  )}
                 </div>
               </div>
             ))}
@@ -52,12 +64,12 @@ const Partnerships = () => {
       </div>
 
       <div className="flex min-w-60 flex-col items-stretch text-[rgba(34,34,34,1)] grow shrink max-w-screen-xl max-md:max-w-full">
-        <div className=" h-[250px] max-w-screen-xl text-8xl font-[450] whitespace-nowrap tracking-[-5.25px] leading-none max-md:text-[40px]">
-          <h2 className="max-md:text-[40px]">Extensive</h2>
-          <div className="max-md:text-[40px]">Partnerships</div>
+        <div className="md:h-[250px] max-w-screen-xl text-8xl font-[450] whitespace-nowrap md:tracking-[-5.25px] md:leading-none max-md:text-5xl">
+          <h2 className="">Extensive</h2>
+          <div className="">Partnerships</div>
         </div>
 
-        <div className="md:text-xl font-normal leading-10 max-md:mt-10">
+        <div className="md:text-xl font-normal leading-10 max-md:leading-7 max-md:mt-10">
           <p>
             Allegianz has always been flexible in its policies regarding its
             founders and partners venturing into businesses of its erstwhile

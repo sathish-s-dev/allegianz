@@ -9,12 +9,12 @@ const AboutUs = () => {
             <div className="bg-[rgba(34,34,34,1)] flex w-[273px] shrink-0 max-w-full h-px" />
             <div className="mt-2">Who we are</div>
           </div>
-          <h2 className="text-[40px] leading-[58px] tracking-[-1.15px] w-[807px] max-md:max-w-full">
+          <h2 className="text-3xl md:text-[40px] max-md:leading-relaxed leading-[58px] tracking-[-1.15px] w-[807px] max-md:max-w-full">
             20 Years of Advisory for Businesses Excellence.
           </h2>
         </div>
         
-        <div className="text-3xl max-md:text-lg flex flex-col gap-6 font-light leading-[44px] max-md:max-w-full">
+        <div className="md:text-3xl text-xl flex flex-col gap-6 font-light text-black/60 md:leading-[44px] max-md:max-w-full">
           <p>
             We offering business and financial consulting services, ranging
             from turnkey solutions to startups, greenfield projects, and early
