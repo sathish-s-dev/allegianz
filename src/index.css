@@ -107,4 +107,7 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+  div:has(span.bg-primary-gradient) {
+    line-height: 1.4;
+  }
 }

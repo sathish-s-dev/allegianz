@@ -24,7 +24,7 @@ const Hero = () => {
               <div className="flex w-full gap-12 flex-col h-full justify-center items-center">
                 <div className="w-full max-w-full flex flex-col gap-4 text-white">
                   <div className="text-xl font-medium leading-none tracking-[-0.34px] max-md:max-w-full">
-                    Get Started with Alliganz
+                    Get Started with Allegianz
                   </div>
                   <h1 className="text-[76px] font-bold leading-[79px] tracking-[-1.94px] max-md:max-w-full max-md:text-[40px] max-md:leading-[46px]">
                     <span className="text-[58px]">From Idea to Impact.</span>
@@ -36,9 +36,9 @@ const Hero = () => {
                 <div className="flex w-full flex-col md:flex-row gap-4 justify-between py-4 relative">
                   <div className="bg-[rgba(255,255,255,0.15)] flex h-px top-0 w-full absolute" />
 
-                  <div className="relative flex min-w-60 gap-12 flex-col text-[rgba(34,34,34,1)] font-medium text-center leading-loose w-64 rounded-[64px]">
-                    <div className="bg-gradient-to-r from-[#FF7448] via-[#FF4848] to-[#6248FF] flex p-1.5 w-full rounded-[80px] flex justify-center items-center">
-                      <button className="bg-white shadow-[0px_2px_4px_rgba(0,0,0,0.1)] flex items-center gap-2 px-4 py-2 w-full rounded-[48px] hover:shadow-lg transition-shadow">
+                  <div className="relative flex hover:scale-[1.01] min-w-60 gap-12 flex-col text-[rgba(34,34,34,1)] font-medium text-center leading-loose w-64 rounded-[64px]">
+                    <div className="bg-gradient-to-r from-[#FF7448] via-[#FF4848] to-[#6248FF] flex p-1.5 w-full rounded-[80px] justify-center items-center">
+                      <button className="bg-white shadow-[0px_2px_4px_rgba(0,0,0,0.1)] flex items-center gap-2 p-2 w-full rounded-[48px] hover:shadow-lg transition-shadow">
                         <img
                           src="https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/9a0cf6c5444257e0d8733c6d93094700164e3f39?placeholderIfAbsent=true"
                           alt="Start Icon"

@@ -70,7 +70,7 @@ const OurApproach = () => {
                 <img
                   src={approach.icon}
                   alt={`${approach.title} Icon`}
-                  className="aspect-[1] object-contain w-[67px] shadow-[0px_2px_4px_rgba(0,0,0,0.12)] rounded-md"
+                  className="aspect-[1] object-contain w-[67px] rounded-md"
                 />
                 <div className="w-full mt-[17px]">
                   <h3 className="text-[rgba(15,15,15,1)] text-[39px] font-semibold leading-[47px]">

@@ -5,7 +5,7 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="bg-white flex min-h-[997px] max-w-full w-[1514px] flex-col items-center justify-center py-[63px] max-md:pl-5 scroll-mt-8"
+      className="bg-white flex min-h-[997px] max-w-full w-[1514px] flex-col items-center justify-center py-[63px] max-md:px-3  scroll-mt-8"
     >
       <div className="min-h-[872px] w-full max-w-screen-2xl">
         <div className="relative flex text-[70px] max-w-4xl font-[450] tracking-[-0.78px] flex-wrap px-[70px] max-md:text-[40px] max-md:px-5">
@@ -18,7 +18,7 @@ const Testimonials = () => {
           </h2>
         </div>
 
-        <div className="bg-[rgba(246,246,246,1)] flex w-full flex-col mt-[60px] px-[39px] max-md:mt-10 max-md:pl-5">
+        <div className="bg-[rgba(246,246,246,1)] flex w-full flex-col mt-[60px] md:px-[39px] max-md:mt-10 max-md:pl-5">
           <div className="flex  items-center overflow-scroll">
             <div className="bg-[rgba(246,246,246,1)] flex min-w-60 flex-col flex-shrink-0 items-stretch text-[rgba(179,179,179,1)] font-[450] w-[383px] pl-[123px] pr-[124px] pt-[119px] pb-[127px] border-[rgba(239,239,239,1)] border-r max-md:px-5 max-md:py-[100px]">
               <div className="w-full text-[92px] whitespace-nowrap tracking-[-1.02px] leading-none max-md:text-[40px]">
@@ -61,8 +61,8 @@ const Testimonials = () => {
               </article>
             ))}
           </div>
-          <CarousalControls totalItems={5} currentIndex={0} />
         </div>
+        <CarousalControls totalItems={5} currentIndex={0} />
       </div>
     </section>
   );

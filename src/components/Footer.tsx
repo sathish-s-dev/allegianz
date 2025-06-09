@@ -21,7 +21,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-black w-full py-12 px-20 max-md:px-5">
+    <footer className="bg-black w-full py-6 md:py-12 px-20 max-md:px-5">
       <div className="max-w-screen-2xl mx-auto">
         <div className="pb-8 border-[rgba(84,84,84,1)] border-b max-md:pr-5">
           <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
@@ -41,7 +41,7 @@ const Footer = () => {
                   </p>
                 </div>
 
-                <div className="flex items-center gap-[30px] text-base text-white font-light underline leading-none mt-5">
+                <div className="flex md:items-center flex-col md:flex-row gap-[30px] text-base text-white font-light underline leading-none mt-5">
                   <a
                     href="tel:+911234121212"
                     className="w-[149px] gap-2.5 hover:text-[rgba(133,82,215,1)] transition-colors"

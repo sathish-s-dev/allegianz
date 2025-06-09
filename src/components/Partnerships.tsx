@@ -63,7 +63,7 @@ const Partnerships = () => {
         </div>
       </div>
 
-      <div className="flex min-w-60 flex-col items-stretch text-[rgba(34,34,34,1)] grow shrink max-w-screen-xl max-md:max-w-full">
+      <div className="flex min-w-60 flex-col px-3 items-stretch text-[rgba(34,34,34,1)] grow shrink max-w-screen-xl max-md:max-w-full">
         <div className="md:h-[250px] max-w-screen-xl text-8xl font-[450] whitespace-nowrap md:tracking-[-5.25px] md:leading-none max-md:text-5xl">
           <h2 className="">Extensive</h2>
           <div className="">Partnerships</div>
