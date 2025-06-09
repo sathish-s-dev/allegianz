@@ -103,9 +103,9 @@ const LiaisonServices = () => {
           {services.map((service, index) => (
             <article
               key={index}
-              className={`bg-gradient-to-bl from-[#3A2883] via-[white] to-white w-full overflow-hidden rounded-[13px] ${index > 0 ? "mt-[55px] max-md:mt-10" : ""}`}
+              className={`bg-[linear-gradient(to_bottom_left,_#3A2883,_#D3A6F7,_#E8D6F5,_#F9F9FD,_#FAFAFD)] w-full overflow-hidden rounded-[13px] ${index > 0 ? "mt-[55px] max-md:mt-10" : ""}`}
             >
-              <div className="border flex flex-col items-stretch justify-center px-[58px] py-[79px] rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:px-5">
+              <div className="border flex flex-col items-stretch justify-center p-10 rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:px-5">
                 <div>
                   <h3 className="w-full text-4xl font-medium tracking-[-0.67px] leading-none pr-14 pb-px max-md:pr-5">
                     {service.title}
@@ -117,7 +117,7 @@ const LiaisonServices = () => {
                     {service.features.map((feature, featureIndex) => (
                       <div
                         key={featureIndex}
-                        className={`flex gap-3.5 ${featureIndex > 0 ? "mt-[9px]" : ""}`}
+                        className={`flex gap-1 ${featureIndex > 0 ? "mt-[9px]" : ""}`}
                       >
                         <img
                           src={feature.icon}

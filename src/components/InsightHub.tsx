@@ -38,6 +38,42 @@ const InsightHub = () => {
       description:
         "In a world where everything's digital, your money is one more thing that's...",
     },
+    {
+      image:
+        "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/beba898c893e40614d4f5ba755f0e9d8827cac48?placeholderIfAbsent=true",
+      category: "ETH/USD",
+      date: "03 Jul 2025",
+      title: "FED SAYS POWELL TOLD PRESIDENT WOULD MAKE POLICY TO MEET...",
+      description:
+        "In a world where everything's digital, your money is one more thing that's...",
+    },
+    {
+      image:
+        "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/6d25c28bc1865526a534aac8dcc40c449b60ea4f?placeholderIfAbsent=true",
+      category: "ETH/USD",
+      date: "03 Jul 2025",
+      title: "FED SAYS POWELL TOLD PRESIDENT WOULD MAKE POLICY TO MEET...",
+      description:
+        "In a world where everything's digital, your money is one more thing that's...",
+    },
+    {
+      image:
+        "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/beba898c893e40614d4f5ba755f0e9d8827cac48?placeholderIfAbsent=true",
+      category: "ETH/USD",
+      date: "03 Jul 2025",
+      title: "FED SAYS POWELL TOLD PRESIDENT WOULD MAKE POLICY TO MEET...",
+      description:
+        "In a world where everything's digital, your money is one more thing that's...",
+    },
+    {
+      image:
+        "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/6d25c28bc1865526a534aac8dcc40c449b60ea4f?placeholderIfAbsent=true",
+      category: "ETH/USD",
+      date: "03 Jul 2025",
+      title: "FED SAYS POWELL TOLD PRESIDENT WOULD MAKE POLICY TO MEET...",
+      description:
+        "In a world where everything's digital, your money is one more thing that's...",
+    },
   ];
 
   return (
@@ -63,7 +99,7 @@ const InsightHub = () => {
         </div>
 
         <div className="flex w-full items-center gap-[40px_85px] mt-16 max-md:mt-10">
-          <div className="text-[rgba(34,34,34,1)] w-[237px]">
+          <div className="text-[rgba(34,34,34,1)] w-[237px]  flex-shrink-0">
             <h3 className="text-[34px] font-medium leading-none">
               Latest News
             </h3>
@@ -73,11 +109,11 @@ const InsightHub = () => {
             </p>
           </div>
 
-          <div className="flex min-w-60 items-center gap-[13px] flex-wrap max-md:max-w-full">
+          <div className="flex min-w-60 items-center gap-[13px] overflow-scroll max-md:max-w-full">
             {newsItems.map((item, index) => (
               <article
                 key={index}
-                className="shadow-[0px_2px_16px_rgba(0,0,0,0.08)] min-w-60 overflow-hidden w-[296px] rounded-[10px]"
+                className="shadow-[0px_2px_16px_rgba(0,0,0,0.08)] flex-shrink-0 min-w-60 overflow-hidden w-[296px] rounded-[10px]"
               >
                 <img
                   src={item.image}

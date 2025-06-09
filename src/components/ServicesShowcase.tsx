@@ -2,7 +2,7 @@ import React from "react";
 
 const ServicesShowcase = () => {
   return (
-    <section className="bg-[rgba(246,246,246,1)] shadow-[0px_-19px_85px_rgba(0,0,0,0.1)] flex max-w-screen-xl flex-col overflow-hidden items-stretch py-8 rounded-[50px_50px_0px_0px]">
+    <section className=" flex max-w-screen-2xl w-full flex-col items-stretch py-8 rounded-[50px_50px_0px_0px]">
       <div className="self-center flex w-[1297px] max-w-full flex-col items-stretch">
         <div className="flex text-7xl gap-4 font-medium flex-wrap max-md:text-[40px]">
           <h2 className="text-[rgba(179,179,179,1)] max-md:max-w-full max-md:text-[40px]">
@@ -13,7 +13,7 @@ const ServicesShowcase = () => {
           </span>
         </div>
 
-        <div className="bg-white shadow-[0px_-6px_16px_rgba(0,0,0,0.05)] border flex min-h-[643px] w-full items-center gap-[40px_67px] overflow-hidden flex-wrap mt-[41px] pl-16 py-[51px] rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:pl-5">
+        <div className="bg-white shadow-[0px_-6px_16px_rgba(0,0,0,0.05)] border flex min-h-[643px] w-full items-center gap-[40px_67px] overflow-hidden mt-[41px] pl-16 py-[51px] rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:pl-5">
           <div className="min-w-60 w-[524px] max-md:max-w-full">
             <div className="max-w-full w-[524px]">
               <div className="w-full font-medium max-md:max-w-full">
@@ -85,7 +85,7 @@ const ServicesShowcase = () => {
           </div>
         </div>
 
-        <div className="bg-white border flex w-full gap-[40px_70px] flex-wrap mt-[41px] py-[50px] rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:mt-10">
+        <div className="bg-white border flex w-full gap-[40px_70px] mt-[41px] py-[50px] rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:mt-10">
           <div className="bg-white flex min-w-60 flex-col overflow-hidden text-[13px] text-[rgba(21,21,21,1)] font-normal leading-none w-[645px] px-[65px] py-[41px] rounded-[0px_13px_13px_0px] border-[rgba(228,226,223,1)] border-t border-r border-b max-md:px-5">
             <div className="flex items-stretch gap-3 tracking-[0.25px] ml-[27px] max-md:ml-2.5">
               <div className="bg-[rgba(71,52,247,1)] flex w-2.5 shrink-0 h-2.5 rounded-sm" />
@@ -128,7 +128,7 @@ const ServicesShowcase = () => {
           </div>
         </div>
 
-        <div className="bg-white border flex w-full items-center gap-[40px_84px] overflow-hidden flex-wrap mt-[41px] pl-[63px] pt-[63px] pb-[45px] rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:pl-5">
+        <div className="bg-white border flex w-full items-center gap-[40px_84px] overflow-hidden mt-[41px] pl-[63px] pt-[63px] pb-[45px] rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:pl-5">
           <div className="min-w-60 font-[450] w-[506px] max-md:max-w-full">
             <div className="w-full font-medium max-md:max-w-full">
               <div className="text-[rgba(112,109,121,1)] text-2xl leading-none tracking-[-0.57px] max-md:max-w-full">
