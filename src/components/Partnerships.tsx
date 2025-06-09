@@ -27,7 +27,7 @@ const Partnerships = () => {
     <section className="bg-[rgba(246,246,246,1)] py-12 flex w-full flex-col gap-6 md:flex-row max-w-screen-2xl items-center overflow-hidden pl-1 md:pr-[110px] max-md:pr-5">
       <div className="min-w-60 overflow-hidden grow shrink md:w-[258px] px-[70px] max-md:px-5">
         <div className="flex gap-[21px] w-full">
-          <div className="md:w-[168px] w-full flex flex-col max-md:flex-row gap-4 animate-bounce">
+          <div className="md:w-[168px] w-full flex flex-col max-md:flex-row gap-4">
             {partnerLogos.map((partner, index) => (
               <div
                 key={index}
