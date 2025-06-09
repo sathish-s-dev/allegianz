@@ -3,7 +3,7 @@ import React from "react";
 const ServicesShowcase = () => {
   return (
     <section className=" flex max-w-screen-2xl w-full flex-col items-stretch py-8 rounded-[50px_50px_0px_0px]">
-      <div className="self-center flex w-[1297px] max-w-full flex-col items-stretch">
+      <div className="self-center flex md:w-[1297px] max-w-full flex-col items-stretch">
         <div className="flex text-7xl gap-4 font-medium flex-wrap max-md:text-[40px]">
           <h2 className="text-[rgba(179,179,179,1)] max-md:max-w-full max-md:text-[40px]">
             Check out our
@@ -13,7 +13,7 @@ const ServicesShowcase = () => {
           </span>
         </div>
 
-        <div className="bg-white shadow-[0px_-6px_16px_rgba(0,0,0,0.05)] border flex min-h-[643px] w-full items-center gap-[40px_67px] overflow-hidden mt-[41px] pl-16 py-[51px] rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:pl-5">
+        <div className="bg-white shadow-[0px_-6px_16px_rgba(0,0,0,0.05)] border flex flex-col md:flex-row min-h-[643px] w-full items-center gap-[40px_67px] overflow-hidden mt-[41px] pl-16 py-[51px] rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:pl-5">
           <div className="min-w-60 w-[524px] max-md:max-w-full">
             <div className="max-w-full w-[524px]">
               <div className="w-full font-medium max-md:max-w-full">
@@ -35,7 +35,7 @@ const ServicesShowcase = () => {
             </div>
 
             <div className="w-full text-base text-[rgba(34,34,34,1)] font-extrabold tracking-[-0.4px] leading-7 mt-6">
-              <div className="h-[236px]">
+              <div className="min-h-[236px]">
                 {[
                   {
                     icon: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/51a37ce43db9b0777d1686ffccd08e45fa7ec84f?placeholderIfAbsent=true",
@@ -54,13 +54,13 @@ const ServicesShowcase = () => {
                     key={index}
                     className="flex w-full max-w-[532px] flex-col items-stretch justify-center px-[13px] py-3 rounded-lg"
                   >
-                    <div className="flex w-full gap-2 flex-wrap">
+                    <div className="flex w-full gap-2 items-start">
                       <img
                         src={item.icon}
                         alt="Service Icon"
                         className="aspect-[1] object-contain w-[25px] shrink-0"
                       />
-                      <div className="min-w-60 w-[456px] py-[7px] max-md:max-w-full">
+                      <div className="min-w-60 w-[456px] max-md:max-w-full">
                         <span className="font-[700]">
                           {item.text.split(" ").slice(0, 3).join(" ")}{" "}
                         </span>
@@ -75,17 +75,17 @@ const ServicesShowcase = () => {
             </div>
           </div>
 
-          <div className="relative flex min-w-60 gap-[40px_100px] overflow-hidden flex-1 shrink basis-[0%] pl-[641px] max-md:max-w-full">
+          <div className="relative -ml-6 flex md:min-w-60 md:gap-[40px_100px] overflow-hidden flex-1 shrink basis-[0%] max-md:pl-0 pl-[641px] max-md:max-w-full">
             <img
               src="https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/bfe174cd2e8439179d121dc03a33b60910729c77?placeholderIfAbsent=true"
               alt="Solar Energy Solutions"
-              className="aspect-[1.18] object-contain w-[642px] absolute min-w-60 h-[542px] rounded-[13px_0px_0px_13px] left-0 right-px bottom-0 max-md:max-w-full"
+              className="md:aspect-[1.18] object-contain w-full md:w-[642px] md:absolute min-w-60 md:h-[542px] rounded-[13px_0px_0px_13px] left-0 right-px bottom-0 max-md:max-w-full"
             />
-            <div className="bg-[rgba(228,226,223,1)] flex shrink h-[541px] flex-1 basis-[0%]" />
+            <div className="bg-[rgba(228,226,223,1)] flex shrink md:h-[541px] flex-1 basis-[0%]" />
           </div>
         </div>
 
-        <div className="bg-white border flex w-full gap-[40px_70px] mt-[41px] py-[50px] rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:mt-10">
+        <div className="bg-white border flex flex-col md:flex-row overflow-hidden w-full gap-[40px_70px] mt-[41px] py-[50px] rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:mt-10">
           <div className="bg-white flex min-w-60 flex-col overflow-hidden text-[13px] text-[rgba(21,21,21,1)] font-normal leading-none w-[645px] px-[65px] py-[41px] rounded-[0px_13px_13px_0px] border-[rgba(228,226,223,1)] border-t border-r border-b max-md:px-5">
             <div className="flex items-stretch gap-3 tracking-[0.25px] ml-[27px] max-md:ml-2.5">
               <div className="bg-[rgba(71,52,247,1)] flex w-2.5 shrink-0 h-2.5 rounded-sm" />
@@ -128,7 +128,7 @@ const ServicesShowcase = () => {
           </div>
         </div>
 
-        <div className="bg-white border flex w-full items-center gap-[40px_84px] overflow-hidden mt-[41px] pl-[63px] pt-[63px] pb-[45px] rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:pl-5">
+        <div className="bg-white flex flex-col md:flex-row border w-full items-center gap-[40px_84px] overflow-hidden mt-[41px] pl-[63px] pt-[63px] pb-[45px] rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:pl-5">
           <div className="min-w-60 font-[450] w-[506px] max-md:max-w-full">
             <div className="w-full font-medium max-md:max-w-full">
               <div className="text-[rgba(112,109,121,1)] text-2xl leading-none tracking-[-0.57px] max-md:max-w-full">
@@ -239,11 +239,11 @@ const ServicesShowcase = () => {
         </div>
       </div>
 
-      <div className="bg-[rgba(246,246,246,1)] flex min-h-[916px] w-full flex-col items-center justify-center mt-11 px-[92px] py-[100px] max-md:mt-10 max-md:px-5">
+      <div className="bg-[rgba(246,246,246,1)] flex md:min-h-[916px] w-full flex-col items-center justify-center mt-11 px-[92px] max-md:py-8 py-[100px] max-md:mt-10 max-md:px-5">
         <div className="flex w-[1188px] max-w-full flex-col items-center">
           <div className="w-[961px] max-w-full">
             <div className="w-full flex flex-col items-center text-7xl max-md:text-[40px]">
-              <h2 className="text-[rgba(34,34,34,1)] font-medium  max-md:text-[40px]">
+              <h2 className="text-[rgba(34,34,34,1)] font-medium text-center max-md:text-[40px]">
                 We're with you in every{" "}
               </h2>
               <div className="font-semibold  max-md:text-[40px] bg-primary-gradient bg-clip-text text-transparent">

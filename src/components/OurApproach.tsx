@@ -1,3 +1,4 @@
+import GradientText from "./ui/GradientText";
 import React from "react";
 import { motion } from "motion/react";
 
@@ -38,12 +39,12 @@ const OurApproach = () => {
         <div className="w-[1280px] max-w-full">
           <div className="text-left max-w-full text-7xl font-medium whitespace-nowrap max-md:text-[40px]">
             <div className="flex w-full py-4 gap-4 flex-wrap max-md:text-[40px]">
-              <h2 className="text-[rgba(22,22,22,1)] max-md:text-[40px]">
+              <h2 className="text-[rgba(22,22,22,1)] max-md:text-[40px] leading-[1.4]">
                 Our
               </h2>
-              <span className="text-center max-md:text-[40px] bg-primary-gradient bg-clip-text text-transparent">
+              <GradientText className="text-center max-md:text-[40px] bg-primary-gradient bg-clip-text text-transparent">
                 Approach
-              </span>
+              </GradientText>
             </div>
           </div>
           <p className="text-[rgba(22,22,22,1)] text-xl font-normal leading-[30px] max-md:max-w-full">
