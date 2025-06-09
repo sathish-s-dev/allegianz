@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="bg-white w-full flex flex-col px-3 min-h-[90vh] rounded-lg max-w-screen-2xl items-center justify-center">
+    <section className="bg-white w-full flex flex-col md:px-3 min-h-[90vh] rounded-lg max-w-screen-2xl items-center justify-center">
       <div className="relative w-full h-[90vh] isolate overflow-hidden rounded-xl after:bg-gradient-to-t to-black/30 from-black/30 after:inset-0 after:z-0 after:absolute">
         <div className="absolute inset-0 z-[-1]">
           <img

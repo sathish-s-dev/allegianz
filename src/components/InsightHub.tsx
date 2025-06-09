@@ -159,7 +159,7 @@ export function CarousalControls({
   currentIndex: number;
 }) {
   return (
-    <div className="flex w-full flex-col justify-center py-4  max-md:mt-10 max-md:px-5">
+  <div className="flex w-full flex-col-reverse gap-6 justify-center py-4  max-md:mt-10 max-md:px-5">
       <div className="flex justify-end items-center gap-2.5">
         <button className="p-1 bg-black rounded-lg">
           <img
