@@ -82,11 +82,11 @@ const InsightHub = () => {
       <div className="flex w-full max-w-screen-2xl bg-[rgba(246,246,246,1)] flex-col overflow-hidden items-stretch justify-center px-[71px] py-[72px] max-md:px-5">
         <div className="w-full">
           <div className="w-[1314px] max-w-full">
-            <div className="max-w-full text-7xl font-medium max-md:text-[40px]">
-              <div className="flex w-full items-center flex-wrap max-md:text-[40px]">
-                <h2 className="text-[rgba(34,34,34,1)] max-md:text-[40px] py-4">
+            <div className="max-w-full text-7xl font-medium max-md:text-4xl">
+              <div className="flex w-full items-center flex-wrap max-md:text-4xl">
+                <h2 className="text-[rgba(34,34,34,1)] max-md:text-4xl py-4">
                   The{" "}
-                  <span className=" text-center max-md:text-[40px] bg-primary-gradient bg-clip-text text-transparent">
+                  <span className=" text-center max-md:text-4xl bg-primary-gradient bg-clip-text text-transparent">
                     Insight Hub.
                   </span>
                 </h2>

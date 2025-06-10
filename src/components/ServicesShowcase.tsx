@@ -3,25 +3,25 @@ import React from "react";
 
 const ServicesShowcase = () => {
   return (
-    <section className=" flex max-w-screen-2xl w-full flex-col items-stretch py-8 rounded-[50px_50px_0px_0px] bg-[rgba(246,246,246,1)]">
+    <section className=" flex max-w-screen-2xl w-full flex-col items-stretch py-8 rounded-[50px_50px_0px_0px] bg-[rgba(246,246,246,1)] relative z-[2]">
       <div className="self-center flex md:w-[1297px] max-w-full flex-col items-stretch">
-        <div className="flex text-7xl gap-4 font-medium flex-wrap max-md:text-[40px]">
-          <h2 className="text-[rgba(179,179,179,1)] max-md:max-w-full max-md:text-[40px]">
+        <div className="flex text-7xl md:gap-4 font-medium flex-wrap max-md:text-4xl md:sticky md:top-16 max-md:px-5">
+          <h2 className="text-[rgba(179,179,179,1)] max-md:max-w-full max-md:text-4xl ">
             Check out our
           </h2>
-          <span className="max-md:text-[40px] bg-primary-gradient bg-clip-text text-transparent">
+          <span className="max-md:text-4xl bg-primary-gradient bg-clip-text text-transparent">
             Services.
           </span>
         </div>
 
-        <div className="bg-white shadow-[0px_-6px_16px_rgba(0,0,0,0.05)] border flex flex-col md:flex-row min-h-[643px] w-full items-center gap-[40px_67px] overflow-hidden mt-[41px] pl-16 py-[51px] rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:pl-5">
+        <div className="bg-white md:sticky top-40 z-[2] shadow-[0px_-6px_16px_rgba(0,0,0,0.05)] border flex flex-col md:flex-row min-h-[643px] w-full items-center gap-[40px_67px] overflow-hidden mt-[41px] pl-16 py-[51px] rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:px-5">
           <div className="min-w-60 w-[524px] max-md:max-w-full">
             <div className="max-w-full w-[524px]">
               <div className="w-full font-medium max-md:max-w-full">
                 <div className="text-[rgba(112,109,121,1)] pb-3 text-2xl leading-none tracking-[-0.57px] max-md:max-w-full">
                   Services
                 </div>
-                <h3 className="text-[rgba(34,34,34,1)] text-[50px] leading-[56px] tracking-[-1.4px] max-md:text-[40px] max-md:leading-[50px]">
+                <h3 className="text-[rgba(34,34,34,1)] text-[50px] leading-[56px] tracking-[-1.4px] max-md:text-4xl max-md:leading-[50px]">
                   Solar Renewable <br />
                   Energy Solutions
                 </h3>
@@ -76,17 +76,17 @@ const ServicesShowcase = () => {
             </div>
           </div>
 
-          <div className="relative -ml-6 md:-ml-0 flex md:min-w-60 md:gap-[40px_100px] overflow-hidden flex-1 shrink basis-[0%] max-md:pl-0 pl-[641px] max-md:max-w-full">
+          <div className="relative flex md:min-w-60 md:gap-[40px_100px] overflow-hidden flex-1 shrink basis-[0%] max-md:pl-0 pl-[641px] max-md:max-w-full">
             <img
               src="https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/bfe174cd2e8439179d121dc03a33b60910729c77?placeholderIfAbsent=true"
               alt="Solar Energy Solutions"
-              className="md:aspect-[1.18] object-contain w-full md:w-[642px] md:absolute min-w-60 md:h-[542px] rounded-[13px_0px_0px_13px] left-0 right-px bottom-0 max-md:max-w-full"
+              className="md:aspect-[1.18] object-contain w-full md:w-[642px] md:absolute min-w-60 md:h-[542px] rounded-lg md:rounded-[13px_0px_0px_13px] left-0 right-px bottom-0 max-md:max-w-full"
             />
             <div className="bg-[rgba(228,226,223,1)] flex shrink md:h-[541px] flex-1 basis-[0%]" />
           </div>
         </div>
 
-        <div className="bg-white border flex flex-col px-3 md:flex-row overflow-hidden w-full gap-[40px_70px] mt-[41px] py-[50px] rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:mt-10">
+        <div className="bg-white border flex flex-col px-3 md:sticky z-[3] top-44 md:flex-row overflow-hidden w-full gap-[40px_70px] mt-[41px] py-[50px] rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:mt-10">
           <div className="bg-white flex min-w-60 flex-col overflow-hidden text-[13px] text-[rgba(21,21,21,1)] font-normal leading-none w-[645px] px-[65px] py-[41px] rounded-[0px_13px_13px_0px] border-[rgba(228,226,223,1)] border-t border-r border-b max-md:px-5">
             <div className="flex items-stretch gap-3 tracking-[0.25px] ml-[27px] max-md:ml-2.5">
               <div className="bg-[rgba(71,52,247,1)] flex w-2.5 shrink-0 h-2.5 rounded-sm" />
@@ -116,7 +116,7 @@ const ServicesShowcase = () => {
               <div className="text-[rgba(112,109,121,1)] pb-3 text-2xl leading-none tracking-[-0.57px] max-md:max-w-full">
                 Metrics
               </div>
-              <h3 className="text-[rgba(34,34,34,1)] text-[50px] leading-[56px] tracking-[-1.4px] max-md:text-[40px] max-md:leading-[50px]">
+              <h3 className="text-[rgba(34,34,34,1)] text-[50px] leading-[56px] tracking-[-1.4px] max-md:text-4xl max-md:leading-[50px]">
                 We're confident in the impact of our Stratergies.{" "}
               </h3>
             </div>
@@ -129,13 +129,13 @@ const ServicesShowcase = () => {
           </div>
         </div>
 
-        <div className="bg-white flex flex-col md:flex-row border w-full items-center gap-[40px_84px] overflow-hidden mt-[41px] px-3 pt-[63px] pb-[45px] rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:pl-5">
+        <div className="bg-white flex flex-col md:flex-row border w-full md:sticky top-48 z-[4] items-center gap-[40px_84px] overflow-hidden mt-[41px] px-3 pt-[63px] pb-[45px] rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:px-5">
           <div className="min-w-60 font-[450] w-[506px] max-md:max-w-full">
             <div className="w-full font-medium max-md:max-w-full">
               <div className="text-[rgba(112,109,121,1)] pb-3 text-2xl leading-none tracking-[-0.57px] max-md:max-w-full">
                 Industry Focus
               </div>
-              <h3 className="text-[rgba(34,34,34,1)] text-[50px] leading-[56px] tracking-[-1.4px] max-md:text-[40px] max-md:leading-[50px]">
+              <h3 className="text-[rgba(34,34,34,1)] text-[50px] leading-[56px] tracking-[-1.4px] max-md:text-4xl max-md:leading-[50px]">
                 Expertise Where It Matters Most
               </h3>
             </div>
@@ -243,15 +243,15 @@ const ServicesShowcase = () => {
       <div className="bg-[rgba(246,246,246,1)] flex md:min-h-[916px] w-full flex-col items-center justify-center mt-11 px-[92px] max-md:py-8 py-[100px] max-md:mt-10 max-md:px-5">
         <div className="flex w-[1188px] max-w-full flex-col items-center">
           <div className="w-[961px] max-w-full">
-            <div className="w-full flex flex-col items-center text-7xl max-md:text-[40px]">
-              <h2 className="text-[rgba(34,34,34,1)] font-medium text-center max-md:text-[40px]">
-                We're with you in every{" "}
+            <div className="w-full flex flex-col items-center text-7xl max-md:text-4xl">
+              <h2 className="text-[rgba(34,34,34,1)] font-medium text-center max-md:text-4xl md:leading-tight">
+                We're with you in every
               </h2>
-              <GradientText className="font-semibold  max-md:text-[40px] bg-primary-gradient bg-clip-text text-transparent">
+              <GradientText className="font-semibold  max-md:text-4xl bg-primary-gradient bg-clip-text text-transparent">
                 Step of the way.
               </GradientText>
             </div>
-            <p className="text-[rgba(34,34,34,1)] text-[19px] font-normal text-center leading-[30px] mt-6 max-md:max-w-full">
+            <p className="text-[rgba(34,34,34,1)] text-[19px] font-normal text-justify max-md:pb-10 sm:text-center leading-[30px] mt-6 max-md:max-w-full">
               No matter if you're launching your first project, rapidly
               expanding your operations, or managing intricate challenges, we
               stand by your side at every crucial milestone. Our commitment is
@@ -259,11 +259,7 @@ const ServicesShowcase = () => {
               meaningful impact every step of the way.
             </p>
           </div>
-          <img
-            src="/graph.png"
-            alt="Step by Step Process"
-            className="w-full"
-          />
+          <img src="/graph.png" alt="Step by Step Process" className="w-full" />
         </div>
       </div>
     </section>

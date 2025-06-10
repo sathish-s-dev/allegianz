@@ -38,12 +38,10 @@ const OurApproach = () => {
       <div className="h-full overflow-hidden">
         <div className="bg-[rgba(255,255,255,0)] flex min-h-[307px] w-full flex-col pt-[38px] pb-[67px] px-[83px] max-md:px-5">
           <div className="w-[1280px] max-w-full">
-            <div className="text-left max-w-full text-7xl font-medium whitespace-nowrap max-md:text-[40px]">
-              <div className="flex w-full py-4 gap-4 flex-wrap max-md:text-[40px]">
-                <h2 className="text-[rgba(22,22,22,1)] max-md:text-[40px]">
-                  Our
-                </h2>
-                <GradientText className="text-center max-md:text-[40px] bg-primary-gradient bg-clip-text text-transparent">
+            <div className="text-left max-w-full text-7xl font-medium whitespace-nowrap max-md:text-4xl">
+              <div className="flex w-full py-4 gap-4 flex-wrap max-md:text-4xl">
+                <h2 className="text-[rgba(22,22,22,1)] max-md:text-4xl">Our</h2>
+                <GradientText className="text-center max-md:text-4xl bg-primary-gradient bg-clip-text text-transparent">
                   Approach
                 </GradientText>
               </div>
@@ -64,16 +62,16 @@ const OurApproach = () => {
                 key={index}
                 initial={{ y: index * 75 }}
                 whileInView={{ y: 0 }}
-                viewport={{ once: true, amount: 0.5 }}
-                className="bg-white border flex min-w-60 min-h-[632px] flex-col overflow-hidden items-stretch grow shrink w-[305px] pl-6 pr-[22px] pt-6 pb-[215px] rounded-[0px_10px_0px_0px] border-[rgba(203,214,255,1)] border-solid max-md:pb-[100px] max-md:px-5"
+                viewport={{ once: true, amount: 0.3 }}
+                className="bg-white group hover:bg-black hover:cursor-pointer transition duration-300 border flex min-w-60 min-h-[632px] flex-col overflow-hidden items-stretch grow shrink w-[305px] pl-6 pr-[22px] pt-6 pb-[215px] rounded-[0px_10px_0px_0px] border-[rgba(203,214,255,1)] border-solid max-md:pb-[100px] max-md:px-5"
               >
                 <img
                   src={approach.icon}
                   alt={`${approach.title} Icon`}
-                  className="aspect-[1] object-contain w-[67px] rounded-md"
+                  className="aspect-[1] object-contain self-end  w-[67px] rounded-md"
                 />
                 <div className="w-full mt-[17px]">
-                  <h3 className="text-[rgba(15,15,15,1)] text-[39px] font-semibold leading-[47px]">
+                  <h3 className="text-[rgba(15,15,15,1)] group-hover:text-white text-[39px] font-semibold leading-[47px]">
                     {approach.title.includes("&") ? (
                       <>
                         {approach.title.split("&")[0].trim()} <br />&{" "}
@@ -83,7 +81,7 @@ const OurApproach = () => {
                       approach.title
                     )}
                   </h3>
-                  <p className="text-[rgba(112,109,121,1)] text-xl font-medium leading-[31px] mt-[31px]">
+                  <p className="text-[rgba(112,109,121,1)] group-hover:text-slate-300  text-xl font-medium leading-[31px] mt-[31px]">
                     {approach.description}
                   </p>
                 </div>

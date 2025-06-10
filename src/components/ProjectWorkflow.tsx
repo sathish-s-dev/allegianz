@@ -1,16 +1,15 @@
-import React from 'react';
+import React from "react";
 
 const ProjectWorkflow = () => {
   return (
     <section className="bg-white flex w-full flex-col items-stretch text-[rgba(34,34,34,1)] justify-center px-[73px] py-[97px] max-md:px-5">
       <div className="w-full">
         <div className="w-[1262px] max-w-full">
-          <h2 className="text-[58px] font-[450] leading-none tracking-[-0.8px] max-md:text-[40px]">
+          <h2 className="text-[58px] font-[450] leading-none tracking-[-0.8px] max-md:text-4xl">
             Quickly Start your project and Work together.
           </h2>
           <p className="text-[22px] font-normal leading-none tracking-[0.48px] mt-[23px] max-md:max-w-full">
-            With simple procedures you can start your project with us,
-            easily.
+            With simple procedures you can start your project with us, easily.
           </p>
         </div>
         <img

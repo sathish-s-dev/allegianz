@@ -1,7 +1,6 @@
 import React from "react";
 
-const Footer = () => {
-  const socialIcons = [
+const socialIcons = [
     {
       src: "https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/d9b4152189228f9dd63db7e446d7bcb463dcac89?placeholderIfAbsent=true",
       alt: "Facebook",
@@ -19,6 +18,7 @@ const Footer = () => {
       alt: "Instagram",
     },
   ];
+const Footer = () => {
 
   return (
     <footer className="bg-black w-full py-6 md:py-12 px-20 max-md:px-5">

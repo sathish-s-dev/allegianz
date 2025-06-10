@@ -43,7 +43,7 @@ const OurExpertise = () => {
   return (
     <section id="expertise" className="max-w-full w-[1514px] scroll-mt-8">
       <div className="flex flex-col relative min-h-[90vh] py-12 w-full overflow-hidden items-center justify-center">
-        <img 
+        <img
           src="https://cdn.builder.io/api/v1/image/assets/047e52a986654640b02e58e3fac7be90/9cd7ef04077227d7b41fd83a0d0fda17e31bff8f?placeholderIfAbsent=true"
           alt="Background"
           className="absolute h-full w-full object-cover inset-0"
@@ -59,7 +59,7 @@ const OurExpertise = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-[25px]" />
 
             <div className="relative z-10 min-w-60 w-[266px]">
-              <h2 className="text-white text-[56px] font-semibold leading-[67px] tracking-[-1.65px] max-md:text-[40px] max-md:leading-[54px]">
+              <h2 className="text-white text-[56px] font-semibold leading-[67px] tracking-[-1.65px] max-md:text-4xl max-md:leading-[54px]">
                 Our Expertise
               </h2>
               <p className="text-[rgba(220,238,248,1)] text-base font-normal leading-[25px] tracking-[-0.49px] mt-[15px]">

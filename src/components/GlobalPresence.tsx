@@ -6,8 +6,8 @@ const GlobalPresence = () => {
     <section className="bg-white flex w-full max-w-screen-2xl flex-col overflow-hidden items-stretch justify-center px-20 py-16 max-md:px-5">
       <div className="w-full">
         <div className="w-full">
-          <div className="flex w-full items-center gap-[13px] text-[90px]  max-md:text-[40px]">
-            <h2 className="font-medium max-md:text-[40px] whitespace-nowrap text-light-text">
+          <div className="flex w-full items-center gap-[13px] text-[90px]  max-md:text-4xl">
+            <h2 className="font-medium max-md:text-4xl whitespace-nowrap text-light-text">
               <GradientText> Hello.</GradientText> Bonjour. Hola. Salve.
               Gutenag. Zdravo.
             </h2>

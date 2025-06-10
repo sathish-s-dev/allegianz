@@ -62,7 +62,7 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        "light-text": "rgba(179,179,179,0.7)"
+        "light-text": "rgba(179,179,179,0.7)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -86,10 +86,22 @@ export default {
             height: "0",
           },
         },
+        "infinite-slide": {
+          "0%": {
+            transform: "translateX(50%)",
+          },
+          "50%": {
+            transform: "translateX(-70%)",
+          },
+          "100%": {
+            transform: "translateX(50%)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "infinite-slide": "infinite-slide 20s linear both infinite",
       },
       backgroundImage: {
         "primary-gradient":

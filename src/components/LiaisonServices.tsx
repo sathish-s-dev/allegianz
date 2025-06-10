@@ -81,14 +81,14 @@ const LiaisonServices = () => {
   ];
 
   return (
-    <section className="bg-white flex w-full max-w-screen-xl items-center gap-2.5 pt-[66px] pb-[95px] px-6   max-md:px-5">
-      <div className="grid grid-cols-1 md:grid-cols-2 flex-wrap relative">
-        <div className="min-w-60 w-full max-md:max-w-full md:sticky top-12 h-fit py-4">
-          <div className="flex w-full items-center text-[78px] gap-4 font-medium whitespace-nowrap flex-wrap max-md:text-[40px]">
-            <h2 className="text-[rgba(34,34,34,1)] shrink max-md:text-[40px]">
+    <section className="bg-white w-full max-w-screen-xl relative pt-[66px] md:h-[400vh] md:-mb-[600px] z-[1] pb-[95px] px-6 max-md:px-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 flex-wrap h-full">
+        <div className="min-w-60 w-full max-md:max-w-full md:sticky top-24 h-fit py-4">
+          <div className="flex w-full items-center text-[78px] gap-4 font-medium whitespace-nowrap flex-wrap max-md:text-4xl">
+            <h2 className="text-[rgba(34,34,34,1)] shrink max-md:text-4xl">
               Laison
             </h2>
-            <span className="text-center max-md:text-[40px] bg-primary-gradient bg-clip-text text-transparent">
+            <span className="text-center max-md:text-4xl bg-primary-gradient bg-clip-text text-transparent">
               Services
             </span>
           </div>
@@ -103,7 +103,8 @@ const LiaisonServices = () => {
           {services.map((service, index) => (
             <article
               key={index}
-              className={`bg-[linear-gradient(to_bottom_left,_#3A2883,_#D3A6F7,_#E8D6F5,_#F9F9FD_30%,_#FAFAFD)] w-full overflow-hidden rounded-[13px] ${index > 0 ? "mt-[55px] max-md:mt-10" : ""}`}
+              style={{ top: `${index * 15 + 150}px` }}
+              className={`bg-[linear-gradient(to_bottom_left,_#3A2883,_#D3A6F7,_#E8D6F5,_#F9F9FD_30%,_#FAFAFD)] w-full overflow-hidden rounded-[13px] md:sticky ${index > 0 ? "mt-[55px] max-md:mt-10" : ""}`}
             >
               <div className="border flex flex-col items-stretch justify-center p-10 rounded-[13px] border-[rgba(0,0,0,0.1)] border-solid max-md:px-5">
                 <div>
